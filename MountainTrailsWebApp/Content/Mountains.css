@@ -1,0 +1,59 @@
+﻿body {
+	background-image: url('/Sources/Images/mountain_back.jpg');
+	background-size: cover;
+	font-family: 'Raleway', sans-serif;
+}
+
+.form-horizontal {
+	color: white;
+	align-items: center;
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0 0 10px;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	background-color: rgba(240,255,240, .4);
+	border: 2px solid white;
+	border-radius: 5px;
+}
+
+h4 {
+	text-align: center;
+	color: white;
+}
+
+h3 {
+	color: red;
+}
+
+.table {
+	color: white;
+	align-items: center;
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0 0 10px;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	background-color: rgba(240,255,240, .4);
+	border: 2px solid white;
+	border-radius: 5px;
+}
+
+.dl-horizontal {
+	color: white;
+	align-items: center;
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0 0 10px;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	background-color: rgba(240,255,240, .4);
+	border: 2px solid white;
+	border-radius: 5px;
+}

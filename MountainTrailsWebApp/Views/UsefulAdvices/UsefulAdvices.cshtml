@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Sfaturi Utile";
+}
+
+<br />
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/UsefulAdvices.css")
+</head>
+<body>
+    <div class="advices">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <img src="~/Sources/Images/img4.jpg"> <br /> <br />
+                <figcaption>@Html.ActionLink("Sfaturi utile pentru incepatori", "BeginnerAdvices", "BeginnerAdvices")</figcaption>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="~/Sources/Images/backpack.jpg"> <br /> <br />
+                <figcaption>@Html.ActionLink("Lista pentru bagajul de munte", "Lugagge", "UsefulAdvices")</figcaption>
+                
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="~/Sources/Images/img5.jpg" > <br /> <br />
+                <figcaption>@Html.ActionLink("Ghid de drumetie la munte. Sfaturi utile.", "Guide", "UsefulAdvices")</figcaption>
+            </div>
+
+            <hr />
+
+            <div class="col-md-4 col-sm-6">
+                <img src="~/Sources/Images/img6.jpg"> <br /> <br />
+                <figcaption>@Html.ActionLink("Semnificatiile marcajelor turistice", "Markings", "UsefulAdvices")</figcaption>
+            </div>
+            @*<div class="col-md-4 col-sm-6">
+                <img src="~/Sources/Images/img7.jpg"> <br /> <br />
+                <figcaption>@Html.ActionLink("Lista pentru bagajul de munte", "Lugagge", "UsefulAdvices")</figcaption>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="~/Sources/Images/img8.jpg"> <br /> <br />
+                <figcaption>@Html.ActionLink("Lista pentru bagajul de munte", "Lugagge", "UsefulAdvices")</figcaption>
+            </div>*@
+        </div>
+    </div>
+</body>
+</html>

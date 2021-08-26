@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top" id="nav">
+        @Html.ActionLink("NAVI Mountain Trails", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+        @Html.ActionLink("Register", "Register", "Account", new { area = "" }, new { @class = "nav-ddl" })
+        @Html.ActionLink("Log in", "Login", "Account", new { area = "" }, new { @class = "nav-ddl" })
+
+        <div class="navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-ddl" })</li>
+
+                <li>@Html.ActionLink("Trasee", "Index", "TrailModelsList", new { area = "" }, new { @class = "nav-ddl" })</li>
+
+                <li>
+                    @Html.ActionLink("Acțiuni", "Index", "Actions", new { area = "" }, new { @class = "nav-ddl" })
+                    <ul class="nav" id="ddl">
+                        <li>@Html.ActionLink("Adaugă Traseu", "Create", "TrailModels", new { area = "" }, new { @class = "nav-ddl" })</li>
+                        <li>@Html.ActionLink("Adaugă Vârf", "Create", "PeakModels", new { area = "" }, new { @class = "nav-ddl" })</li>
+                        <li>@Html.ActionLink("Adaugă Munte", "Create", "MountainModels", new { area = "" }, new { @class = "nav-ddl" })</li>
+                    </ul>
+                </li>
+
+                <li>@Html.ActionLink("Vârfuri", "Index", "PeakModelsList", new { area = "" }, new { @class = "nav-ddl" })</li>
+
+                <li>@Html.ActionLink("Zone Montane", "Index", "MountainModelsList", new { area = "" }, new { @class = "nav-ddl" })</li>
+
+                <li>@Html.ActionLink("Sfaturi Utile", "UsefulAdvices", "UsefulAdvices", new { area = "" }, new { @class = "nav-ddl" })</li>
+
+                <li>
+                    @Html.ActionLink("Statistici Generale", "Index", "Statistics", new { area = "" }, new { @class = "nav-ddl" })
+                    <ul class="nav" id="ddl">
+                        <li>@Html.ActionLink("Turiști în 2010-2020", "Index", "NoPeopleArr1020Models", new { area = "" }, new { @class = "nav-ddl" })</li>
+                        <li>@Html.ActionLink("Turiști în Stațiuni Montane", "Index", "NoPeopleArrMR20Models", new { area = "" }, new { @class = "nav-ddl" })</li>
+                        @*<li>@Html.ActionLink("Adauga munte", "Create", "MountainModels", new { area = "" }, new { @class = "nav-ddl" })</li>*@
+                    </ul>
+                </li>
+
+                <li>@Html.ActionLink("Contact", "Contact", "EmailSetup", new { area = "" }, new { @class = "nav-ddl" })</li>
+
+            </ul>
+        </div>
+
+    </nav>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - Ivan Emilia-Ioana </p>
+            </footer>
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+</body>
+</html>

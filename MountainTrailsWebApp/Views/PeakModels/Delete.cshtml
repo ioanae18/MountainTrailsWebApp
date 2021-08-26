@@ -1,0 +1,57 @@
+﻿@model MountainTrailsWebApp.Models.PeakModels
+
+@{
+    ViewBag.Title = "Sterge un varf";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/Peaks.css")
+</head>
+<body>
+    <h3> Esti sigur ca doresti sa stergi acest varf? </h3>
+    <div>
+        <h4> <b> Sterge un varf </b></h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Mountain.MountainName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Mountain.MountainName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.PeakName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.PeakName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Height)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Height)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <br />
+                <input type="submit" value="Delete" class="btn btn-danger" /> |
+                @Html.ActionLink("Back to List", "Index", new { }, new { @class = "btn btn-warning" })
+            </div>
+        }
+    </div>
+</body>
+</html>

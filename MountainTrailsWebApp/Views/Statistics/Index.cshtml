@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Statistici";
+}
+
+<br />
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/Statistics.css")
+</head>
+<body>
+    <div class="advices">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <img src="~/Sources/Images/statistics1.jpg"> <br /> <br />
+                <figcaption>@Html.ActionLink("Turiștii cazați în structurile de primire turistică cu funcțiuni de cazare turistică, pe tipuri de structuri", "Index", "NoPeopleArr1020Models")</figcaption>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="~/Sources/Images/statistics2.jpg"> <br /> <br />
+                <figcaption>@Html.ActionLink("Înnoptările în structurile de primire turistică cu funcțiuni de cazare turistică, pe principalele destinații turistice, tipuri de structuri și categorii de confort, în anul 2020", "Index", "NoPeopleArrMR20Models")</figcaption>
+            </div>
+            @*<div class="col-md-4 col-sm-6">
+                <img src="~/Sources/Images/img5.jpg"> <br /> <br />
+                <figcaption>@Html.ActionLink("Adauga un varf", "Create", "PeakModels")</figcaption>
+            </div>*@
+
+            <hr />
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1161 @@
+﻿@model IEnumerable<MountainTrailsWebApp.Models.TrailModels>
+
+@{
+    ViewBag.Title = "Lista trasee Pagina 4";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/TrailModelsList4.css")
+    @Styles.Render("~/Content/lightbox.min.css")
+    <script src="~/js/lightbox-plus-jquery.js"></script>
+    <script src="~/js/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+    <div class="products">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="filters">
+                        <ul>
+                            <li class="active" data-filter="*"> Toate traseele </li>
+                            <li data-filter=".beg"> Incepatori </li>
+                            <li data-filter=".med"> Mediu </li>
+                            <li data-filter=".dif"> Dificil </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="filters-content">
+                        <div class="row grid">
+
+                            <div class="col-lg-4 col-md-4 all beg">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/canton1.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Cantonul Brătei - Şaua Lucăcilă - Cabana Bolboci </h4>
+                                        <p> Legătura Cantonul Brătei - Cabana Bolboci, peste M. Zănoaga </p>
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal1">
+                                            Citește mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal1">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Cantonul Brătei - Şaua Lucăcilă - Cabana Bolboci </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu/dificil </td>
+                                                        <td> 6,97 KM </td>
+                                                        <td> 2:00-2:30 H </td>
+                                                        <td> 430 M </td>
+                                                        <td> 220 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td colspan="2"> Martie </td>
+                                                        <td rowspan="4"> Aprilie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                        <td>Octombrie</td>
+                                                        <td>Noiembrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Cantonul Brătei - Muntele Zănoaga - Şaua Lucăcilă - Cabana Podu’ cu Florile - Cabana Bolboci
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 31 Cruce Roșie leagă Cantonul Brătei, de la poalele Leaotei, de zona lacului de acumulare Bolboci, trecând peste culmile
+                                                    Zănoaga-Lespezi. Urcăm la cota 1500, cu perspective fermecătoare asupra Lacului Bolboci, Munților Leaota și Bucegilor.
+                                                    <br />
+                                                    Traseul 31 face legătura între Cabana Bolboci și cantonul forestier Brătei, de la poalele munților Leaota. Un traseu destul de
+                                                    solicitant, cu aprox. 500 m diferențe de nivel, în cca 2.5 - 3 h de drumeție. Iarna, zăpezile mari pot pune probleme.
+                                                    <br />
+                                                    Cantonul Brătei aflat pe Valea Brăteiului se prezintă ca un platou frumos, la poalele Munților Leaota, un punct excelent de
+                                                    plecare înspre vârfurile acestuia (vezi traseul 57). Pentru acest segment, CR pornește din Cantonul Brătei, urcă pe o vale plină
+                                                    de pietriş alunecos, la drumul forestier spre Cariera Lespezi, apoi continuă pe piciorul Muntelui Lespezi, până la cota 1500 și
+                                                    mai departe, șerpuind pe serpentine, în golul alpin.
+                                                    <br />
+                                                    Urcăm în Şaua Lucăcilă, iar apoi luăm drumul forestier până la Cabana Podu’ cu Florile, unde întâlnim marcajul PG (traseul 53) -
+                                                    spre Vf. Tătaru. Continuăm mai departe până la Cabana Bolboci, aflată lângă barajul lacului de acumulare. Bolboci e un lac vast,
+                                                    creat prin blocarea artificială a râului Ialomița în 1988 (baraj), ascunzându-se printre versanți, astfel încât e aproape
+                                                    imposibil să îl prinzi într-o singură imagine, chiar și de pe creste.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    De la Cantonul Brătei urcăm pe o vale plină de pietriş mărunt şi alunecos, până în drumul forestier ce urcă spre Cariera 
+                                                    Lespezi. Urmăm drumul spre nord şi la cota 1300 intrăm pe poteca ce urcă în serpentine strânse pe piciorul Muntelui Lespezi,
+                                                    până la cota 1500. Continuăm pe panta mai lină pentru o diferenţă de nivel de 100 de metri urmează un nou set de serpentine 
+                                                    printre urmele foştilor piloni de funicular şi la 1650 m ieşim la golul alpin. Urcăm încă 50 de metri diferenţă de nivel până în
+                                                    Şaua Lucăcilă. Coborâm pe drumul de TAF spre est şi apoi spre nord pe drumul forestier până la Cabana CJ Dâmboviţa Podu’ cu 
+                                                    Florile. Continuăm pe drumul forestier până la Cabana Bolboci.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/canton1.jpg" data-lightbox="mygallery" data-title="Cantonul Brătei - Şaua Lucăcilă - Cabana Bolboci">
+                                                            <img src="~/Sources/Gallery/canton1.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all dev">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/moroieni1.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Moroeni - Plaiul Priporului - Cabana Scropoasa </h4>
+                                        <br /><br /><br />
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal2">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal2">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Moroeni - Plaiul Priporului - Cabana Scropoasa </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu </td>
+                                                        <td> 22,91 KM </td>
+                                                        <td> 5:45-7:15 H </td>
+                                                        <td> 880 M </td>
+                                                        <td> 270 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td> Ianuarie </td>
+                                                        <td> Februarie </td>
+                                                        <td> Martie </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> Aprilie </td>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td> Septembrie </td>
+                                                        <td> Octombrie </td>
+                                                        <td> Noiembrie </td>
+                                                        <td> Decembrie </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Moroeni - Sanatoriul Moroeni - Plaiul Priporului - Plaiul Orzei - Cabana Scropoasa
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 32 Cruce Albastră leagă comuna Moroieni de lacul de acumulare Scropoasa, pe drumul modernizat spre Sanatoriul Moroeni,
+                                                    drum ce urcă apoi în serpentine strânse în coasta plaiului Priporului și Plaiul Orzei, la marginea rezervației Orzea-Zănoaga.
+                                                    Traseu accesibil și pentru cicloturism.
+                                                    <br />
+                                                    Traseul 32 face legătura între comuna Moroieni și fosta cabană Scopoasa, pe drumul care urcă pe Plaiul Priporului și Plaiul
+                                                    Orzei. Un traseu lung, destul de solicitant, cu peste 800 m diferențe de nivel, în cca 6 h de drumeție, potrivit pentru MTB.
+                                                    <br />
+                                                    Din Moroeni urmăm drumul modernizat care urcă prin satul Glod până la Sanatoriul Moroeni și mai departe pe Plaiul Priporului
+                                                    spre Hotelul Peştera. Ajunși pe Plaiului Orzei, în dreptul unei cabane particulare, drumul se bifurcă.
+                                                    <br />
+                                                    CA face stânga și coboară pe drumul de acces auto spre lacul de acumulare Scropoasa, cu fosta cabană Scropoasa (dezafectată).
+                                                    Aici întâlnim marcajele spre Lacul Bolboci și mai departe spre Hotel Peștera și Cheile Horoabei (traseul 8).
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    Din Moroeni urmăm drumul modernizat care urcă prin satul Glod până la Sanatoriul Moroeni şi apoi pe drumul nemodernizat DJ
+                                                    714 pe Plaiul Priporului spre Hotelul Peştera. În dreptul Plaiului Orzei părăsim DJ714 şi coborâm pe drumul de acces auto 
+                                                    spre staţia şi lacul de acumulare Scropoasa.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/moroieni1.jpg" data-lightbox="mygallery" data-title="Moroeni - Plaiul Priporului - Cabana Scropoasa">
+                                                            <img src="~/Sources/Gallery/moroieni1.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all gra">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/piatraturcului1.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Piatra Turcului/Sub cetate - Şaua Vânturiş - telescaun Valea Soarelui </h4>
+                                        <p> Drumul de Vară - Cascadele Vânturiş - telescaun Valea Soarelui </p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal3">
+                                            Citește mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal3">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Piatra Turcului/Sub cetate - Şaua Vânturiş - telescaun Valea Soarelui </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu </td>
+                                                        <td> 4,83 KM </td>
+                                                        <td> 1:15-1:30 H </td>
+                                                        <td> 120 M </td>
+                                                        <td> 140 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Aprilie</td>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                        <td>Octombrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Piatra Turcului/Sub cetate - Şaua Vânturiş - Valea Izvorul Dorului - telescaun Valea Soarelui
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 33 Punct Roșu face ocolul rezervației Colții lui Barbeș, pe lângă Cascadele Vânturiș, pe la baza pereţilor stâncoși,
+                                                    pe o fostă potecă haiducească. Priveliștea se deschide spre sudul V. Prahovei, Vf. Vânturiș și Păduchiosu. Segmentul final
+                                                    urmărește firul Văii Izvorul Dorului, la baza Vâlcelului Vârfului cu Dor spre telescaun Valea Soarelui.
+                                                    <br />
+                                                    Traseul 33 PR face legătura între Drumul de Vară (cota 1800) și telescaun Valea Soarelui, vizitând Lacurile și Cascadele Vânturiș,
+                                                    pe sub Rezervația Colții Lui Barbeș. Un traseu fermecător, dar destul de solicitant, cu peste 600 m diferențe de nivel, în cca 3
+                                                    h de drumeție. Iarna - nerecomandat.
+                                                    <br />
+                                                    Chiar dacă este mai puțin cunoscut, acest traseu urmărește o veche potecă haiducească, pe sub Colții lui Barbeș, arie protejată
+                                                    cu relief din calcare. gresii, șisturi cristaline și conglomerate. Peisajul este dominat de abruptul Colţilor lui Barbeş și
+                                                    oferă panorame asupra Văii Vânturișului cu vârful Păduchiosul (1925 m).
+                                                    <br />
+                                                    La intersecția platoului Bucegilor cu avenul Vânturiș - abruptul dintre Colții lui Barbeș și Vânturiș, se formează Cascadele
+                                                    Vânturișului, ca urmare a căderii apelor spumoase ale Izvorului Dorului. Cascada Vânturiș este defapt formată din trei cascade:
+                                                    Cascada de Sus, Cascada Mare și Cascada din Vale. Pentru a te bucura pe deplin de spectacolul acestor cascade, recomandăm
+                                                    vizitarea acestora în perioada mai-iunie, când debitul este mai mare.
+                                                    <br />
+                                                    PR pornește de pe pârtia „Drumul de vară”, marcată BR (traseul 1) de la cota 1800 (sub Piatra Turcului), pe curbă de nivel
+                                                    prin pădure și iese la baza abruptului Colţilor lui Barbeş, unde cu puțin noroc, găsim intrarea la Cascade. De aici continuăm
+                                                    pe pantele înierbate, deasupra lacurilor Vânturiș, lângă care întâlnim varianta PG (traseul 35) - dinspre Vf. cu Dor și Masa
+                                                    Ciobanului. Ultimul segment urmărește firul Văii Izvorul Dorului până sub telescaun Valea Soarelui, unde întâlnim varianta CG
+                                                    (traseul 36) dinspre Lacul Bolboci.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    Marcajul porneşte de pe pârtia „Drumul de vară”, de la cota 1800 (sub Piatra Turcului). Mergem pe curbă de nivel prin poienile 
+                                                    de sub versantul nord-vestic al Vârfului cu Dor şi continuăm prin pădure. Depăşim firele Văii Valea Stânei şi ieşim sub 
+                                                    abruptul Colţilor lui Barbeş. Poteca merge prin pădure pe la baza pereţilor, depăşim câteva vâlcele şi pe pantele înierbate
+                                                    ajungem în Valea Vânturiş deasupra lacurilor. Urmăm în amonte firul Văii Izvorul Dorului şi ajungem la baza Vâlcelului
+                                                    Vârfului cu Dor sub staţia de telescaun Valea Soarelui.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/piatraturcului1.jpg" data-lightbox="mygallery" data-title="Piatra Turcului/Sub cetate - Şaua Vânturiş - telescaun Valea Soarelui">
+                                                            <img src="~/Sources/Gallery/piatraturcului1.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all gra">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/saua1.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Şaua Vârfului cu Dor - Cota 2000 </h4>
+                                        <p> Legătura Şaua Vârfului cu Dor - Cota 2000 </p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal4">
+                                            Citește mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal4">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Şaua Vârfului cu Dor - Cota 2000 </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> uşor/mediu </td>
+                                                        <td> 0,69 KM </td>
+                                                        <td> ~0:30 H </td>
+                                                        <td> 100 M </td>
+                                                        <td> 0 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Aprilie</td>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                        <td>Octombrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Şaua Vârfului cu Dor - Cota 2000
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 34 Triunghi Roșu este legătura directă Şaua Vârfului cu Dor - Cota 2000, ca alternativă a traseului principal ce
+                                                    trece pe la fosta cabană Vf. cu Dor și fosta cabană Miorița. Urcăm pe lângă pârtia Valea Dorului spre staţia de telecabină
+                                                    de la Cota 2000.
+                                                    <br />
+                                                    Traseul 34 TR face legătura între Şaua Vârfului cu Dor și staţia de telecabină de la Cota 2000. Un traseu scurt, fără
+                                                    diferențe mari de nivel, în cca. jumătate de oră.
+                                                    <br />
+                                                    Pornim din Şaua Vârfului cu Dor, unde întâlnim marcajele BR (traseul 1) și varianta CG (traseul 36) dinspre Lacul Bolboci.
+                                                    Urcăm piciorul de munte până la capătul de sus al telescaunului, apoi coborâm lângă staţia de telecabină de la Cota 2000.
+                                                    Aici întâlnim traseul principal BG (traseul 37), pe care putem reveni în Şaua Vârfului cu Dor, trecând pe la fosta cabană
+                                                    Miorița și fosta cabană Vârful cu Dor
+                                                </p>
+
+                                                <br />
+
+                                                <h3><b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    Din Şaua Vârfului cu Dor urcăm piciorul de munte până la capătul de sus al telescaunului, urmărind linia culmii şi stâlpii 
+                                                    de marcaj. De lângă telescaun coborâm lângă staţia de telecabină de la Cota 2000.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/saua1.jpg" data-lightbox="mygallery" data-title="Şaua Vârfului cu Dor - Cota 2000">
+                                                            <img src="~/Sources/Gallery/saua1.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all dev">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/saua2.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Şaua Vârfului cu Dor - Şaua Vânturiş </h4>
+                                        <p> Şaua Vârfului cu Dor - Lacurile Vânturiş, pe la Masa Ciobanului </p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal5">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal5">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Şaua Vârfului cu Dor - Şaua Vânturiş </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu </td>
+                                                        <td> 1,78 KM </td>
+                                                        <td> ~0:30 H </td>
+                                                        <td> 40 M </td>
+                                                        <td> 290 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Aprilie</td>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                        <td>Octombrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Şaua Vârfului cu Dor - Masa Ciobanului - Şaua Vânturiş
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 35 Punct Galben coboară de pe platoul Vârfului. cu Dor, pe sub Masa Ciobanului până aproape de Lacurile și
+                                                    Cascadele Vânturiș, într-un peisaj dominat de abruptul Colţilor lui Barbeş. Priveliști spre sudul V. Prahovei, Vf. Vânturiș
+                                                    și Păduchiosu.
+                                                    <br />
+                                                    Traseul 35 face legătura între platoul Vârfului. cu Dor și Lacurile Vânturiș, pe sub Masa Ciobanului. Un traseu scurt, fără
+                                                    diferențe mari de nivel, în cca. jumătate de oră, accesibil oricărei categorii de vârstă. Iarna - nerecomandat.
+                                                    <br />
+                                                    PG pornește de lângă fosta cabana Vârful cu Dor, urcă 10-15 min. pe sub Masa Ciobanului (unde putem face o pauză de relaxare)
+                                                    și continuă (opțional) cu o urcare ușoară de cca 10 min până pe Vârful cu Dor, cu priveliști frumoase spre Valea Prahovei.
+                                                    <br />
+                                                    Reveniți în potecă, coborâm pe sub pereţii vârfului, pe păşunile alpine, până în Pintenul Dorului şi continuăm pe curbă de
+                                                    nivel până deasupra Şeii Vânturiş şi a Lacurilor Vânturiş, unde întâlnim poteca PR (traseul 33).
+                                                    <br />
+                                                    Peisajul este dominat de abruptul Colţilor lui Barbeş și oferă panorame asupra Văii Vânturișului cu Vf. Vânturiș (1925 m)
+                                                    și Păduchiosu în fundal. La intersecția platoului Bucegilor cu avenul Vânturiș - abruptul dintre Colții lui Barbeș și
+                                                    Vânturiș formează Cascadele Vânturișului, ca urmare a căderii apelor spumoase ale Izvorului Dorului.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    Din Şaua Vârfului cu Dor mergem în urcare spre Vârful cu Dor. Urcăm 10-15 minute până sub Masa Ciobanului, mergem pe sub vârf, 
+                                                    coborâm pe sub pereţii vârfului pe pante înclinate până în Pintenul Dorului şi mergem pe curbă de nivel descendentă până 
+                                                    deasupra Şeii Vânturiş şi a Lacurilor Vânturiş.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/saua2.jpg" data-lightbox="mygallery" data-title="Şaua Vârfului cu Dor - Şaua Vânturiş">
+                                                            <img src="~/Sources/Gallery/saua2.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all des">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/varfulcudor1.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Fosta cabană Vârful cu Dor - Cabana Bolboci </h4>
+                                        <p> Legătura Şaua Vârfului cu Dor - Lacul Bolboci </p>
+                                        <br />
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal6">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal6">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Fosta cabană Vârful cu Dor - Cabana Bolboci </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu/dificil </td>
+                                                        <td> 8,51 KM </td>
+                                                        <td> 2:00-2:30 H </td>
+                                                        <td> 120 M </td>
+                                                        <td> 560 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Aprilie</td>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                        <td>Octombrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Fosta cabană Vârful cu Dor - Valea Izvorul Dorului - Cabana Bolboci
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 36 Cruce Galbenă străbate platoul Vârfului cu Dor până pe Valea Soarelui, apoi coboară pe piciorul sud-vestic al
+                                                    Vârfului Nucet spre barajul Bolboci. Priveliști spre abruptul nordic al Colţilor lui Barbeş, coastele Furnicii, Muntele
+                                                    Zănoaga-Lespezi și lacul de acumulare Bolboci.
+                                                    <br />
+                                                    Traseul 36 CG face legătura între fosta Cabană Vârful cu Dor și Lacul Bolboci, pe sub Vârful Nucet. Un traseu destul de
+                                                    solicitant, coborând peste 600 m diferențe de nivel, în cca. 3.5 h de drumeție. Iarna, zăpezile mari pot pune probleme.
+                                                    <br />
+                                                    De pe platoul Văii Dorului, străbatem poteca pe firul Vâlcelului Vârfului cu Dor spre pârtia Valea Soarelui, lăsând în
+                                                    stânga abruptul nordic al Colţilor lui Barbeş, cu întinse pajişti de smirdar, iar în dreapta, coastele largi şi înierbate
+                                                    ale Furnicii. De la confluența Văii Izvorului Dorului cu Vâlcelul Vârfului cu Dor, urcăm pe un drum de TAF, pe lângă două
+                                                    stâne și ieșim la drumul asfaltat ce urcă până la Piatra Arsă dinspre cabana Dichiu.
+                                                    <br />
+                                                    Continuăm pe coama Nucetului și observăm cetatea de piatra a Muntelui Zănoaga, Lespezile, iar departe în fund, vârful
+                                                    singuratic al Leaotei. Ajungem într-o şa cu băncuțe și ținem piciorul sud-vestic spre barajul Bolboci. Intrăm în pădure
+                                                    pe un drum de TAF ce coboară abrupt spre malul stâng al lacului. De aici urmăm drumul auto spre Cabana Bolboci. Aici
+                                                    întâlnim marcajul CR (traseul 31) care străbate culmile Zănoaga-Lespezi spre Cantonul Brătei, de unde putem urca mai
+                                                    departe spre Vf. Leaota, peste Muntele Răteiul (traseul 57).
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    De la fosta Cabană Vârful cu Dor urcăm până în Şaua Vârfului cu Dor şi coborâm pe Vâlcelul Vârfului cu Dor pe pârtie, 
+                                                    până la capătul de telescaun Valea Soarelui. Urcăm pe drumul de TAF, pe lângă două stâne, ieşim în drumul asfaltat DJ 
+                                                    714, mergem pe sub Vârful Nucet (1861 m) şi coborâm pe piciorul sud-vestic spre barajul Bolboci. Ajungem într-o şa şi 
+                                                    intrăm în pădure pe un drum de TAF ce coboară abrupt spre malul stâng al Lacului Bolboci. De aici urmăm drumul asfaltat,
+                                                    pe malul stâng al lacului parcurgem Barajul Bolboci şi ajungem la Cabana Bolboci.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/varfulcudor1.jpg" data-lightbox="mygallery" data-title="Fosta cabană Vârful cu Dor - Cabana Bolboci">
+                                                            <img src="~/Sources/Gallery/varfulcudor1.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all des">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/varfulcudor2.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Fosta cabană Vârful cu Dor - Cabana Piatra Arsă - Cabana Omu </h4>
+                                        <p> Legătura Moieciu - Hotel Peștera, prin Șaua Bătrâna </p>
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal7">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal7">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Fosta cabană Vârful cu Dor - Cabana Piatra Arsă - Cabana Omu </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu/dificil </td>
+                                                        <td> 12,81 KM </td>
+                                                        <td> 3:30-4:30 H </td>
+                                                        <td> 690 M </td>
+                                                        <td> 70 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Ianuarie</td>
+                                                        <td>Februarie</td>
+                                                        <td>Martie</td>
+                                                        <td>Aprilie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                        <td>Octombrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Fosta cabană Vârful cu Dor - Cabana Mioriţa - Muntele Furnica - Cabana Piatra Arsă - Cabana Babele - Cerdacul Obârşiei - Cabana Omu
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 37 Bandă Galbenă străbate golul alpin al Bucegilor, pe un parcurs la înălțime (cota 2000+), pe direcția N-S.
+                                                    Poteca urcă pe sub Muntele Furnica, coboară spre Cabana Piatra Arsă și continuă în urcare pe platoul Babelor, de unde
+                                                    ține culmea dintre Colții Obârșiei și Vârful Bucura Dumbrava și mai departe spre Vârful Omu.
+                                                    <br />
+                                                    Traseul 37 BG face legătura între fosta Cabană Vârful cu Dor și Cabana Omu, trecând pe la Cabana Piatra Arsă și Cabana
+                                                    Babele. Un traseu destul de solicitant, cu peste 900 m diferențe de nivel, în cca. 6 h de drumeție. Iarna, zăpezile mari
+                                                    pot pune probleme.
+                                                    <br />
+                                                    De la Cabana Vârful cu Dor traseul se îndreaptă către NE, urmează stâlpii indicatori până la fosta Cabană Mioriţa și ajunge
+                                                    la telecabina de la Cota 2000. De-aici urcăm spre Vârful Furnica (2103 m) unde se găseşte o staţie meteo, apoi coborâm în
+                                                    Șaua Călugărului. Varianta de vară merge pe curbă de nivel pe sub Muntele Furnica și trece peste pârtiile de ski (Furnica,
+                                                    Pelișor etc), deasupra Pietrei Turcului / „Sub Cetate”. Ținem versantul estic al Vârfului Piatra Arsă (2044 m) şi începem
+                                                    coborârea spre Cabana Piatra Arsă, unde întâlnim traseul principal BA (traseul 2) dinspre Sinaia.
+                                                    <br />
+                                                    Continuăm pe curbă de nivel prin vestul Muntelui Jepii Mici, de-a coasta pe sub Vf. Ciocârlia (2043 m), sub care întâlnim
+                                                    traseul de legătură TA (traseul 38) spre Cantonul Jepi, respectiv traseul Jepii Mari spre Bușteni. Ajungem la Staţia de
+                                                    telecabină Babele pe o potecă largă de jnepeni, apoi poposim la Cabana Babele, unde întâlnim traseul Jepii Mici.
+                                                    <br />
+                                                    Trecem pe lângă stâncile Babele și mai apoi Sfinxul, sculptate de forța vântului, adevărate monumente ale naturii. Coborâm
+                                                    apoi pe lângă Baza Salvamont Babele de sub Baba Mare (2294 m) și continuăm în paralel cu drumul alpin ce duce la releul
+                                                    Coștila. După un urcuș domol, ajungem la Șaua Șugărilor, unde întâlnim varianta CR (traseul 41) - dinspre Baba Coștila și
+                                                    Vf. Caraiman. În stânga avem lunga V. Şugărilor care coboară spre Valea Ialomiţei, iar în dreapta Valea Căldărilor, spre
+                                                    Valea Cerbului, cu priveliști deosebite.
+                                                    <br />
+                                                    Varianta de vară merge pe curbă de nivel pe sub Cerdac cca. 20 min, ajunge la capătul Cerdacului şi mai apoi în Şaua
+                                                    Obârşiei (Cerbului). De aici ne bucurăm de priveliști spectaculoase spre V. Cerbului, Colții Morarului, Mecetul Turcesc
+                                                    și Valea Obârșiei. Mai departe, poteca urcă până sub Vârful Găvanele (2472 m), unde întâlnim traseul BR (traseul 54) -
+                                                    spre Vf. Bătrâna peste M. Doamnele.
+                                                    <br />
+                                                    Ultimul segment ocoleşte Vârful Bucura Dumbrava (2503 m) pe la vest şi în final ajunge la Cabana Omu (2507 m), amplasată
+                                                    la cea mai mare înălțime în Carpați (2505 m). Alături găsim Stația meteo Vârful Omu, cel mai înalt punct locuit permanent
+                                                    din țară. Putem reveni spre Cabana Piatra Arsă pe Drumul lui Butmăloiu (traseul 2).
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    De la fosta Cabană Vârful cu Dor urcăm spre nord-vest până la Cabana Mioriţa și apoi la staţia de telecabină de la Cota 2000.
+                                                    Continuăm spre Vârful Furnica (2103 m) și coborâm în Şaua Călugărului (întâlnim varianta de vară a marcajului (fosta cabană
+                                                    Vârful cu Dor-Piatra Turcului-Șaua Călugărului). Continuăm pe versantul estic al Vârfului Piatra Arsă (2044 m) şi coborâm spre
+                                                    Cabana Piatra Arsă. Din dreptul cabanei continuăm pe un culoar format între jnepeni, mergem pe curbă de nivel prin vestul 
+                                                    Muntelui Jepii Mici și ajungem la Staţia de telecabină Babele. Mergem pe latura vestică a culmii până la Cabana Babele.
+                                                    Trecem pe lângă Babe și Sfinx și continuăm spre nord spre Baza Salvamont Buşteni, de lângă Baba Mare (2294 m) și mai departe 
+                                                    spre Şaua Şugărilor. Urcăm 5 minute până la o baracă metalică. Pentru varianta de vară (interzisă iarna!), mergem pe curbă 
+                                                    de nivel pe sub Cerdac şi ajungem la capătul Cerdacului şi mai apoi în Şaua Obârşiei. Pentru varianta de iarnă, de la baracă
+                                                    facem stânga, urcăm 10 minute până la circa 2400 de metri altitudine, urmăm drumul larg şi stâlpii indicatori şi la capătul
+                                                    Cerdacului coborâm printr-un horn înclinat cu o conductă de gaze până după Cerdac, unde întâlnim varianta de vară. Parcurgem
+                                                    Şaua Obârşiei spre nord şi urmând drumul larg urcăm până sub Vârful Găvanele (2472 m), ocolim Vârful Bucura Dumbrava (2503 m) 
+                                                    pe la vest şi ajungem la Cabana Omu (2507 m).
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/varfulcudor2.jpg" data-lightbox="mygallery" data-title="Fosta cabană Vârful cu Dor - Cabana Piatra Arsă - Cabana Omu">
+                                                            <img src="~/Sources/Gallery/varfulcudor2.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all des">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/sinaia4.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Drumul Sinaia - Cota 1400 - Poiana Stânii </h4>
+                                        <p> Legătura Sinaia - Stâna Regală, pe drumul auto </p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal8">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal8">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Drumul Sinaia-Cota 1400 - Poiana Stânii </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> uşor </td>
+                                                        <td> 3,33 KM </td>
+                                                        <td> 1:00-1:15 H </td>
+                                                        <td> 220 M </td>
+                                                        <td> 40 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Ianuarie</td>
+                                                        <td>Februarie</td>
+                                                        <td>Martie</td>
+                                                        <td>Aprilie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td> Septembrie </td>
+                                                        <td> Octombrie </td>
+                                                        <td> Noiembrie </td>
+                                                        <td> Decembrie </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Drumul Sinaia-Cota 1400 - Poiana Stânii
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 38 Bandă Albastră leagă drumul de acces Sinaia-Cota de Poiana Stânii. Un traseu scurt, care nu pune probleme,
+                                                    folosind drumul auto spre Cabana Stâna Regală. Drumul trece pe lângă stânca de escaladă Sfânta Ana, în apropierea căreia
+                                                    există şi o chilie rupestră. Accesibil și pentru cicloturism
+                                                    <br />
+                                                    Traseul 38 BA face legătura între drumul Sinaia-Cota 1400 și Poiana Stânii / Cabana Stâna Regală, în apropiere de stânca
+                                                    Franz Josef. Un traseu relativ ușor, în urcare, câștigând 300 m diferență de nivel, în aprox. 1 h de drumeție.
+                                                    <br />
+                                                    Dacă facem un ocol de la acest drum auto putem ajunge la stânca de escaladă Sfânta Ana, în apropierea căreia există şi o
+                                                    chilie rupestră. Putem admira Muntele Furnica, Valea Peleşului, platoul Pietrei Arse, parţial Jepii Mici, Jepii Mari.
+                                                    <br />
+                                                    Din Poiana Stânii putem urca la Stânca Franz Joseph, amenajată în anul 1896, când însuși Regele Carol I a venit în acest
+                                                    loc cu împăratul Austro-Ungariei, Franz Joseph, pentru a-i arăta frumusețea locului. De aici se pot observa Valea Prahovei,
+                                                    stațiunile Predeal, Bușteni, Sinaia dar și munții Baiului cu vârful Cumpătu.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    Urmăm drumul de acces auto spre Poiana Stânii/Cabana Stâna Regală, cu pornire din drumul Sinaia-Cota 1400 de la cota 1020 m 
+                                                    până la Poiana Stânii (1270 m).
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/sinaia4.jpg" data-lightbox="mygallery" data-title="Drumul Sinaia-Cota 1400 - Poiana Stânii">
+                                                            <img src="~/Sources/Gallery/sinaia4.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all des">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/canton2.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Canton Schiel/Jepi - Sub Vârful Ciocârlia </h4>
+                                        <p> Legătura Cantonul Schiel - Cabana Babele, pe sub Vârful Ciocârlia </p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal9">
+                                            Citește mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal9">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Canton Schiel/Jepi - Sub Vârful Ciocârlia </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> uşor/mediu </td>
+                                                        <td> 1,18 KM </td>
+                                                        <td> ~0:30 H </td>
+                                                        <td> 60 M </td>
+                                                        <td> 10 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Aprilie</td>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                        <td>Octombrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Canton Schiel/Jepi - Sub Vârful Ciocârlia
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 39 Triunghi Albastru leagă cantonul Jepi de drumul spre Cabana Babele. Urcăm printr-un culoar de jnepeni pe sub
+                                                    Vârful Ciocârlia (2043 m) până pe platoul Babelor. Străbatem culmile domoale dintre Cantonul Schiel până sub Vârful Ciocârlia.
+                                                    <br />
+                                                    Traseul 39 TA face legătura între cantonul Jepi  / Schiel și drumul auto ce urcă la Cabana Babele de la Complexul Sportiv
+                                                    Piatra Arsă. Un traseu scurt, în urcare, fără diferență pronunțată de nivel, în aprox. 40 min de drumeție. Iarna, zăpezile
+                                                    mari pot pune probleme.
+                                                    <br />
+                                                    Pentru a ajunge la Cantonul Jepi, urcăm pe traseul Jepii Mici dinspre Bușteni, un traseu solicitant, cu diferențe
+                                                    considerabile de nivel, echipat cu cabluri (interzis iarna). Continuăm printr-un culoar de jnepeni, paralel cu Valea
+                                                    Urlătorii Mari, marcat din când în când cu câte un stâlp indicator, până la altitudinea de 2040 m.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    De la Cantonul Jepi poteca urcă printr-un culoar de jnepeni până la altitudinea de 2040 m. Aici găsim un drum de maşină
+                                                    nemarcat şi un indicator spre Piatra Arsă (stânga) şi Babele (dreapta). Mergând în continuare spre V-SV circa 100 de metri,
+                                                     ajungem în traseul Piatra Arsă-Babele.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/canton2.jpg" data-lightbox="mygallery" data-title="Canton Schiel/Jepi - Sub Vârful Ciocârlia">
+                                                            <img src="~/Sources/Gallery/canton2.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <ul class="pages">
+                        <li><a href="@Url.Action("Index", "TrailModelsList")"> 1 </a></li>
+                        <li><a href="@Url.Action("Index", "TrailModelsList2")"> 2 </a></li>
+                        <li><a href="@Url.Action("Index", "TrailModelsList3")"> 3 </a></li>
+                        <li class="active"><a href="#"> 4 </a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

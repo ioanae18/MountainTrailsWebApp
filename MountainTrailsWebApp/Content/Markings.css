@@ -1,0 +1,27 @@
+﻿html {
+	height: 100%;
+}
+
+body {
+	background-size: cover;
+	color: #000;
+	line-height: 1.5;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	overflow-x: hidden;
+	letter-spacing: 0.075em;
+	-webkit-font-smoothing: antialiased;
+}
+
+h2 {
+	text-align: center;
+	color: #cc0000;
+}
+.markings{
+	background-color: white;
+	border: groove;
+	padding-left: 10px;
+}
+	.markings:hover {
+		box-shadow: 0 0 5px 8px rgba(218,165,32, 0.5);
+	}

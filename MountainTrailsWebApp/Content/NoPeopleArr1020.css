@@ -1,0 +1,62 @@
+﻿h1{
+	text-align: center;
+}
+
+body {
+	margin: 0;
+	background: linear-gradient(to right, rgb(0, 121, 145), rgb(120, 255, 214));
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+}
+
+h1, table {
+	text-align: center;
+}
+
+
+table {
+	border-collapse: collapse;
+	width: 70%;
+	margin: 0 auto 5rem;
+}
+
+
+th, td {
+	padding: 1.5rem;
+	font-size: 1.3rem;
+}
+
+
+tr {
+	background: hsl(50, 50%, 80%);
+}
+
+tr, td {
+	transition: .4s ease-in;
+}
+
+tr:first-child {
+	background: hsla(147, 50%, 47%, 0.5);
+}
+
+tr:nth-child(even) {
+	background: hsla(50, 50%, 80%, 0.7);
+}
+
+td:empty {
+	background: hsla(50, 25%, 60%, 0.7);
+}
+
+tr:hover:not(#firstrow), tr:hover td:empty {
+	background: hsla(248, 53%, 58%, 0.5);
+	pointer-events: visible;
+}
+
+tr:hover:not(#firstrow) {
+	transform: scale(1.2);
+	font-weight: 700;
+	box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+
+

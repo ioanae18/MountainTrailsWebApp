@@ -1,0 +1,99 @@
+﻿@model IEnumerable<MountainTrailsWebApp.Models.NoPeopleArrMR20Models>
+
+@{
+    ViewBag.Title = "Lista sosirilor in statiuni montane 2020";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/NoPeopleArrMR20.css")
+</head>
+<body>
+
+    <h1>
+        Înnoptările în structurile de primire turistică cu funcțiuni de cazare turistică,
+        pe principalele destinații turistice, tipuri de structuri și categorii de confort, în anul 2020
+    </h1>
+    <br />
+
+    <table class="container">
+        <thead>
+            <tr>
+                <th>
+                    <h1> @Html.DisplayNameFor(model => model.Stars)</h1>
+                </th>
+                <th>
+                    <h1> @Html.DisplayNameFor(model => model.Hotels)</h1>
+                </th>
+                <th>
+                    <h1> @Html.DisplayNameFor(model => model.Hostels)</h1>
+                </th>
+                <th>
+                    <h1> @Html.DisplayNameFor(model => model.Motels)</h1>
+                </th>
+                <th>
+                    <h1> @Html.DisplayNameFor(model => model.Villas)</h1>
+                </th>
+                <th>
+                    <h1>@Html.DisplayNameFor(model => model.Cabins)</h1>
+                </th>
+                <th>
+                    <h1> @Html.DisplayNameFor(model => model.Campings)</h1>
+                </th>
+                <th>
+                    <h1> @Html.DisplayNameFor(model => model.Stops)</h1>
+                </th>
+                <th>
+                    <h1> @Html.DisplayNameFor(model => model.Pensions)</h1>
+                </th>
+                <th>
+                    <h1> @Html.DisplayNameFor(model => model.Village)</h1>
+                </th>
+
+            </tr>
+        </thead>
+
+        @foreach (var item in Model)
+        {
+            <tbody>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Stars)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Hotels)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Hostels)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Motels)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Villas)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cabins)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Campings)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Stops)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Pensions)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Village)
+                    </td>
+                </tr>
+            </tbody>
+        }
+
+    </table>
+</body>
+</html>

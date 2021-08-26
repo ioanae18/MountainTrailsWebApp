@@ -1,0 +1,94 @@
+﻿@model IEnumerable<MountainTrailsWebApp.Models.TrailModels>
+
+@{
+    ViewBag.Title = "Index traseu";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/Trails.css")
+</head>
+<body>
+    <br />
+    <p>
+        @Html.ActionLink("Create New", "Create", new {  }, new { @class = "btn btn-warning" })
+    </p>
+
+    <h4> <b> Lista traseelor adăugate </b></h4>
+    <hr />
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TrailName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Duration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Distance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Climb)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descend)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Difficulty.DifficultyName)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.IdSeason)
+                </th>
+                <th>
+                  @Html.DisplayNameFor(model => model.IdMarkings)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdMountain)
+                </th>*@
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TrailName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Duration)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Distance)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Climb)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descend)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Difficulty.DifficultyName)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.IdSeason)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdMarkings)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdMountain)
+                    </td>*@
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.IdTrail }, new { @class = "btn btn-success" }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.IdTrail }, new { @class = "btn btn-info" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.IdTrail }, new { @class = "btn btn-danger" })
+                </td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>

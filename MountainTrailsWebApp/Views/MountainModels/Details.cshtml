@@ -1,0 +1,77 @@
+﻿@model MountainTrailsWebApp.Models.MountainModels
+
+@{
+    ViewBag.Title = "Detaiile unui munte";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/Mountains.css")
+</head>
+<body>
+
+    <h4> <b> Detaliile unui munte </b></h4>
+    <hr />
+
+    <div> 
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.MountainName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.MountainName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.IdCounty)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.IdCounty)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Division)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Division)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Group)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Group)
+            </dd>
+
+            @*<dt>
+            @Html.DisplayNameFor(model => model.IdTrail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdTrail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdPeak)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdPeak)
+        </dd>*@
+
+        </dl>
+    </div>
+    <p>
+        <br />
+        @Html.ActionLink("Edit", "Edit", new { id = Model.IdMountain }, new { @class = "btn btn-success" }) |
+        @Html.ActionLink("Back to List", "Index", new { }, new { @class = "btn btn-warning" })
+    </p>
+</body>
+</html>

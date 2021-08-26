@@ -1,0 +1,107 @@
+﻿@model MountainTrailsWebApp.Models.TrailModels
+
+@{
+    ViewBag.Title = "Sterge un traseu";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/Trails.css")
+</head>
+<body>
+    <h3> Esti sigur ca vrei sa stergi acest traseu? </h3>
+    <div>
+        <h4> <b> Sterge un traseu </b></h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Difficulty.DifficultyName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Difficulty.DifficultyName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TrailName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TrailName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Duration)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Duration)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Distance)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Distance)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Climb)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Climb)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Descend)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Descend)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.IdSeason)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.IdSeason)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.IdMarkings)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.IdMarkings)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.IdMountain)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.IdMountain)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+
+            <br />
+
+            <div class="form-actions no-color">
+
+                <input type="submit" value="Delete" class="btn btn-danger" /> |
+                @Html.ActionLink("Back to List", "Index", new { }, new { @class = "btn btn-warning" })
+            </div>
+        }
+    </div>
+</body>
+</html>

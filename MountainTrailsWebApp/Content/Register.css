@@ -1,0 +1,44 @@
+﻿body {
+	background-image: url('/Sources/Images/caro7.jpg');
+	background-size: cover;
+	font-family: 'Raleway', sans-serif;
+}
+.form-group input {
+	color: white;
+	align-items: center;
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0 0 10px;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	background-color: #c68c53;
+	border-radius: 5px;
+}
+.form-group input:hover {
+	color: black;
+	background-color: white;
+}
+.row {
+	background: rgba(255,222,173, 0.4);
+	height: 50%;
+	width: 60%;
+	margin: 70px 40px 50px 250px;
+}
+
+h4 {
+	text-align: center;
+	color: white;
+}
+
+h2 {
+	text-align: center;
+	color: white;
+}
+.form-group1{
+	color: white;
+}
+.form-group1 .form-control{
+	shape-margin: initial;
+}

@@ -1,0 +1,51 @@
+﻿@model MountainTrailsWebApp.Models.PeakModels
+
+@{
+    ViewBag.Title = "Detaliile varfurilor";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/Peaks.css")
+</head>
+<body>
+    <div>
+        <h4> <b> Detaliile unui varf </b></h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Mountain.MountainName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Mountain.MountainName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.PeakName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.PeakName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Height)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Height)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        <br />
+        @Html.ActionLink("Edit", "Edit", new { id = Model.IdPeak },  new { @class = "btn btn-success" }) |
+        @Html.ActionLink("Back to List", "Index", new { }, new { @class = "btn btn-warning" })
+    </p>
+</body>
+</html>

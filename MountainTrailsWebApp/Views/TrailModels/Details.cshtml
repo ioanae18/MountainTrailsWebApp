@@ -1,0 +1,102 @@
+﻿@model MountainTrailsWebApp.Models.TrailModels
+
+@{
+    ViewBag.Title = "Detalii traseu";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/Trails.css")
+</head>
+<body>
+    <div>
+
+        <br />
+
+        <h4> <b> Detaliile unui traseu</b></h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Difficulty.DifficultyName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Difficulty.DifficultyName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TrailName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TrailName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Duration)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Duration)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Distance)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Distance)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Climb)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Climb)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Descend)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Descend)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.IdSeason)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.IdSeason)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.IdMarkings)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.IdMarkings)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.IdMountain)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.IdMountain)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        <br />
+        @Html.ActionLink("Edit", "Edit", new { id = Model.IdTrail }, new { @class = "btn btn-success" }) |
+        @Html.ActionLink("Back to List", "Index", new { }, new { @class = "btn btn-warning" })
+    </p>
+</body>
+</html>

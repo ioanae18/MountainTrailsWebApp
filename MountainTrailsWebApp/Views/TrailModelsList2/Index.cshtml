@@ -1,0 +1,1229 @@
+﻿@model IEnumerable<MountainTrailsWebApp.Models.TrailModels>
+
+@{
+    ViewBag.Title = "Lista trasee Pagina 2";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/TrailModelsList2.css")
+    @Styles.Render("~/Content/lightbox.min.css")
+    <script src="~/js/lightbox-plus-jquery.js"></script>
+    <script src="~/js/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+    <div class="products">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="filters">
+                        <ul>
+                            <li class="active" data-filter="*"> Toate traseele </li>
+                            <li data-filter=".beg"> Incepatori </li>
+                            <li data-filter=".med"> Mediu </li>
+                            <li data-filter=".dif"> Dificil </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="filters-content">
+                        <div class="row grid">
+
+                            <div class="col-lg-4 col-md-4 all beg">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/busteni1.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Buşteni - Şaua Baiului - Cabana Diham </h4>
+                                        <p> Traseul clasic Bușteni- Cabana Diham </p>
+                                        <br />
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal1">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal1">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Buşteni - Şaua Baiului - Cabana Diham </h1> </div>
+                                                
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu </td>
+                                                        <td> 8,91 KM </td>
+                                                        <td> 2:30-3:15 H </td>
+                                                        <td> 480M </td>
+                                                        <td> 50M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Ianuarie</td>
+                                                        <td>Februarie</td>
+                                                        <td>Martie</td>
+                                                        <td>Aprilie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Octombrie</td>
+                                                        <td>Noiembrie</td>
+                                                        <td>Decembrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Buşteni - Cabana Gura Diham - Şaua Baiului - Cabana Diham
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 12 Triunghi Albastru este considerat unul dintre cele mai ușoare trasee montane din Bucegi, potrivit și pentru
+                                                    copii obișnuiți cu 8-9 km de drumeție. Străbatem Valea Cerbului până la Cabana Gura Diham, apoi urcăm în Șaua Baiului, de unde
+                                                    ținem drumul spre Cabana Diham, o importantă bază turistică a Bucegilor.
+                                                    <br />
+                                                    Traseul 12 TA face legătura între Bușteni și Cabana Diham, trecând pe la Cabana Gura Diham. Este probabil pentru mulți dintre
+                                                    drumeți, un traseu al amintirilor, un traseu de inițiere din perioada copilăriei, potrivit pentru orice vârstă, mai puțin iarna
+                                                    când are unele porțiuni cu gheață, în aprox. 3-4 h de drumeție.
+                                                    <br />
+                                                    Situată în Munţii Dihamului, la marginea unei poieni largi de sub Măgura Cenuşie, cabana Diham reprezintă o importantă bază
+                                                    turistică. Un excelent loc de odihnă ce este în acelaşi timp un punct de plecare pentru excursii în împrejurimi sau spre potecile
+                                                    dificile din abruptul nordic al Bucegilor. Iarna cabana Diham serveşte ca bază pentru practicarea schiului fond. Cabana Diham este
+                                                    accesibilă turiştilor cu o formă fizică moderată.
+                                                    <br />
+                                                    Pornim din Bușteni și odată ajunși la drumul de pe Valea Cerbului, continuăm pe şosea, iar în cca. 30-40 min ajungem la ramificaţia
+                                                    drumurilor spre Plaiul Fânului, unde lăsăm BG (Traseul 10) spre Omu la stânga. După cca. jumătate de oră ajungem la Cabana
+                                                    Gura Diham (987 m). (Bușteni - Cabana Gura Diham 1 - 1, 5 h).
+                                                    <br />
+                                                    Urcăm prin spatele cabanei, apoi lăsăm în stânga BR (traseul 11) și continuăm prin pădure pe piciorul SE al Muntelui Diham. În
+                                                    40-45 de min trecem pe lângă conducta de gaze și ajungem în Şaua Baiului, important nod de trasee (legătura cu 13, 14, 15, 16,
+                                                    18, 45). Din șa, ținem un drum auto nemodernizat (20-25 min) și ajungem la Cabana Diham.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    De la Gara Buşteni urmăm spre nord DN1 până la strada Nestor Ureche, facem stânga pe aceasta până la drumul asfaltat de pe Valea
+                                                    Cerbului și continuăm până la Gura Diham. Urcăm printr-un culoar de pădure și după 10 minute facem dreapta pe piciorul sud-estic
+                                                    al Muntelui Diham pe versantul drept (geografic) al Cracului Dihamului. Pe lângă conducta de gaze urcăm în Şaua Baiului (se remarcă
+                                                    doi stâlpi de retransmisiuni) şi apoi, pe un drum auto nemodernizat, ajungem la Cabana Diham.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/busteni1.jpg" data-lightbox="mygallery" data-title="Buşteni - Şaua Baiului - Cabana Diham">
+                                                            <img src="~/Sources/Gallery/busteni1.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all dev">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/azuga1.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Gara Azuga - Valea Grecului - Cabana Diham </h4>
+                                        <p> Legătura Azuga - Cabana Diham, pe Valea Grecului </p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal2">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal2">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Gara Azuga - Valea Grecului - Cabana Diham </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu </td>
+                                                        <td> 6,38 KM </td>
+                                                        <td> 1:45-2:00 H </td>
+                                                        <td> 580 M </td>
+                                                        <td> 201 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Ianuarie</td>
+                                                        <td>Februarie</td>
+                                                        <td>Martie</td>
+                                                        <td>Aprilie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Octombrie</td>
+                                                        <td>Noiembrie</td>
+                                                        <td>Decembrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Gara Azuga - Valea Grecului - Şaua Grecului - Şaua Baiului - Cabana Diham
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 13 Triunghi Galben urmează drumul forestier de pe Valea Grecului și Culmea Grecu - Leuca, pe un traseu potrivit
+                                                    pentru orice vârstă, cu priveliști spre abruptul Bucegilor, Munții Baiului, Piatra Mare și Postăvaru. Din Șaua Baiului,
+                                                    ținem drumul spre Cabana Diham, o importantă bază turistică a Bucegilor.
+                                                    <br />
+                                                    Traseul 13 face legătura între Azuga și Cabana Diham peste  culmi domoale și are marele avantaj că oferă panoramei excelente
+                                                    asupra abruptului Bucegilor. Iarna, în condiții de zăpadă mare se fac aprox. 3, 5 h de drumeție Potrivit pentru schi de tură.
+
+                                                    Un traseu de o zi ce se adresează tuturor categoriilor de împătimiți ai munților, de la avansați la începători, de la copii la
+                                                    părinți, mai puțin umblat, ce oferă perspective asupra Munților Baiului, Postăvaru, Piatra Mare și evident, Bucegi. Urmăm Valea
+                                                    Grecului până în Şaua Grecului, apoi facem o derivație scurtă la punctul de belvedere de pe Vf. Grecului, de unde continuăm pe
+                                                    culme pe Vârful Leuca Mică şi coborâm la Dihamul Militar.
+
+                                                    Situată în Munţii Dihamului, la marginea unei poieni largi de sub Măgura Cenuşie, cabana Diham reprezintă o importantă bază
+                                                    turistică. Un excelent loc de odihnă ce este în acelaşi timp un punct de plecare pentru excursii în împrejurimi sau spre potecile
+                                                    dificile din abruptul nordic al Bucegilor. Iarna cabana Diham serveşte ca bază pentru practicarea schiului fond. Cabana Diham este
+                                                    accesibilă turiştilor cu o formă fizică moderată.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    Din Gara Azuga mergem circa 150 m spre nord, trecem Prahova şi urcăm pe Valea Grecului pe drum forestier 30-40 de minute și apoi
+                                                    pe potecă pe firul apei și în serpentine până în Şaua Grecului. Mergem în stânga pe sub Vârful Grecului, urcăm pe culme pe Vârful
+                                                    Leuca Mică şi coborâm la Dihamul Militar (unitate militară) şi apoi în Şaua Baiului.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/azuga1.jpg" data-lightbox="mygallery" data-title="Gara Azuga - Valea Grecului - Cabana Diham">
+                                                            <img src="~/Sources/Gallery/azuga1.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all gra">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/predeal1.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Predeal - Culmea Clăbucetul Baiului - Şaua Baiului </h4>
+                                        <p> Legătura Predeal - Cabana Diham, prin Șaua Baiului</p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal3">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal3">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Predeal - Culmea Clăbucetul Baiului - Şaua Baiului </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu </td>
+                                                        <td> 7,11 KM </td>
+                                                        <td> 2:15-2:45 H </td>
+                                                        <td> 460 M </td>
+                                                        <td> 100 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Ianuarie</td>
+                                                        <td>Februarie</td>
+                                                        <td>Martie</td>
+                                                        <td>Aprilie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Octombrie</td>
+                                                        <td>Noiembrie</td>
+                                                        <td>Decembrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Predeal - Culmea Clăbucetul Baiului - Dihamul Militar - Şaua Baiului
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 15 Bandă Albastră urcă Clăbucetul Baiului spre Cabana Diham, trecând prin Șaua Grecului, un traseu accesibil
+                                                    celor obișnuiți cu diferențe de nivel de 500 m +. Priveliști spre abruptul estic al Bucegilor cu Vârful Bucșoiu, Colții
+                                                    Morarului și Colții Obârșiei.
+                                                    <br />
+                                                    Traseul 15 BA face legătura între Predeal și Șaua Baiului, situată pe drumul spre Cabana Diham. Un traseu destul de solicitant,
+                                                    cu peste 500 m diferențe de nivel, în cca 3 h de drumeție. Iarna, zăpezile mari pot pune probleme.
+                                                    <br />
+                                                    În afară de sezonul de iarnă, când devine un important punct de atracție pentru schiori, Predealul este și un loc încărcat de
+                                                    istorie. Situat la limita dintre Muntenia și Transilvania, a luat naștere ca un nod feroviar pe magistrala Ploiești - Brașov.
+                                                    Prin particularitățile sale geografice și climatice, și-a creat un potențial turistic, favorizând trasee turistice. Unul dintre
+                                                    acestea este și traseul spre Șaua Baiului prin Clăbucetul Baiului.
+                                                    <br />
+                                                    Clăbucetul Baiului, situat la extremitatea vestică a Bucegilor, deasupra localităților Azuga și Predeal. este - în toate
+                                                    anotimpurile - un pisc cu minunate perspective montane către masivele din jur. De peel vedem abruptul estic al Bucegilor cu
+                                                    Vârful Bucșoiu, Colții Morarului și Colții Obârșiei, platoul Masivului Piatra Mare și Munții Neamțului - Gârbova.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    Din Predeal urmăm DN73A, pe lângă U.M. Valea Râşnoavei şi din Valea Leucii urcăm pe culmea Clăbucetul Baiului spre sud-est
+                                                    pe un drum de exploatare vechi. Traversăm o poiană lungă şi prin pădure ieşim pe versantul estic al Muntelui Leuca Mare.
+                                                    Continuăm pe poteca clară până în Şaua Grecului, continuăm spre Vârful Leuca Mică pe care îl ocolim pe marcaje pe versantul
+                                                    sudic şi ajungem în Şaua Baiului.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/predeal1.jpg" data-lightbox="mygallery" data-title="Predeal - Culmea Clăbucetul Baiului - Şaua Baiului">
+                                                            <img src="~/Sources/Gallery/predeal1.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all gra">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/predeal2.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Predeal - Valea Iadului - Şaua Baiului </h4>
+                                        <p> Legătura Predeal - Cabana Diham, pe Valea Leucii </p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal4">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal4">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Predeal - Valea Iadului - Şaua Baiului </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu </td>
+                                                        <td> 4,70 KM </td>
+                                                        <td> 1:30-1:45 H </td>
+                                                        <td> 350 M </td>
+                                                        <td> 0 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Martie</td>
+                                                        <td>Aprilie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Predeal - Valea Leucii - Valea Iadului - Dihamul Militar - Şaua Baiului
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 16 Triunghi Roșu urcă ușor pe Valea Leucii spre Șaua Baiului, în majoritate pe drum forestier. Preferat de
+                                                    alergători sau pasionații de ciclism care vor să ajungă rapid din Predeal la Cabana Diham. Drumul face legătura între
+                                                    Unitățile Militare Vânători de Munte UM V. Râșnoavei și U.M. Dihamul Militar.
+                                                    <br />
+                                                    Traseul 16 TR este o alternativă a potecii ce urcă peste Clăbucetul Baiului, legătura între Predeal și Șaua Baiului. Un
+                                                    traseu destul de solicitant, cu aprox 400 m diferențe de nivel, în cca 2 h de drumeție. Iarna, zăpezile mari pot pune probleme.
+                                                    <br />
+                                                    Înălțimea de peste 1100 m recomandă orașul Predeal în primul rând ca stațiune pentru schi. Însă Predealul este și un loc
+                                                    încărcat de istorie. Situat la limita dintre Muntenia și Transilvania, a luat naștere ca un nod feroviar pe magistrala Ploiești -
+                                                    Brașov. Prin particularitățile sale geografice și climatice, și-a creat un potențial turistic, favorizând trasee turistice. Unul
+                                                    dintre acestea este și traseul spre Șaua Baiului prin Valea Leucii.
+                                                    <br />
+                                                    Pornim din Predeal pe șoseaua națională spre Azuga, apoi intrăm pe Valea Leucii, pe lângă U.M. Valea Râşnoavei - cca 4 km de
+                                                    drum forestier. Valea este largă și urcușul este ușor. Pe dreapta avem Muchia Leucii iar pe stânga muntele Clăbucetul Baiului.
+                                                    După ce intrăm în pădure, ajungem la confluența cu Valea Iadului, apoi urcăm abrupt pe poteca șerpuită și ieșim în dreptul U.M
+                                                    Dihamul Militar, unde întâlnim marcajul TG și BA (13, 14, 15).
+                                                    <br />
+                                                    În Șaua Baiului întâlnim indicatoarele TA (traseul 12) - dinspre Bușteni prin Gura Dihamului și CA (traseul 45) - dinspre Cabana
+                                                    Poiana Izvoarelor. În față se deschide perspectiva încântătoare a Morarului și Bucșoiului și putem continua spre Cabana Diham.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    Din DN73A trecem pe lângă U.M. Valea Râşnoavei şi mergem pe Valea Leucii pe drum forestier. La intrarea în Valea Iadului
+                                                    lăsăm ruinele unei foste garnizoane, facem stânga pe un fir al Văii Iadului şi după 45-50 de minute de urcat, ajungem la
+                                                    gardul U.M. Dihamul Militar. Prin stânga unităţii militare ajungem în Şaua Baiului.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/predeal2.jpg" data-lightbox="mygallery" data-title="Predeal - Valea Iadului - Şaua Baiului">
+                                                            <img src="~/Sources/Gallery/predeal2.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all dev">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/predeal3.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Predeal - Muchia Brădetului - Valea Frăsinet </h4>
+                                        <p> Legătura Predeal - Valea Frăsinet, pe la Cabana Forban </p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal5">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal5">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Predeal - Muchia Brădetului - Valea Frăsinet </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu/dificil </td>
+                                                        <td> 7,31 KM </td>
+                                                        <td> 2:00-2:30 H </td>
+                                                        <td> 350 M </td>
+                                                        <td> 270 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Ianuarie</td>
+                                                        <td>Februarie</td>
+                                                        <td>Martie</td>
+                                                        <td>Aprilie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Octombrie</td>
+                                                        <td>Noiembrie</td>
+                                                        <td>Decembrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Predeal - Gâlma Mare - Valea Râşnoavei - Muchia Brădetului - Cabana Forban (Steaua) - Valea Frăsinet
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 17 Banda Albastră urcă ușor în majoritate prin pădure, pe Muchia (Culmea) Brădetului până la Cabana Forban (Steaua),
+                                                    apoi coboară abrupt spre Valea Frăsinet, sub Muchia Cenușie. De aici se poate ajunge la Cabana Diham.
+                                                    <br />
+                                                    Traseul 17 BA face legătura între Predeal și zona Cabana Diham, trecând pe la Cabana Forban (Steaua). Un traseu peste culmi
+                                                    domoale, potrivit pentru orice vârstă, cu aprox. 400 m diferențe de nivel, în cca. 2.5 h de drumeție.
+                                                    <br />
+                                                    Înălțimea de peste 1100 m recomandă orașul Predeal în primul rând ca stațiune pentru schi. Însă Predealul este și un loc încărcat
+                                                    de istorie. Situat la limita dintre Muntenia și Transilvania, a luat naștere ca un nod feroviar pe magistrala Ploiești - Brașov.
+                                                    Prin particularitățile sale geografice și climatice, orașul Predeal și-a creat un potențial turistic, favorizând trasee turistice
+                                                    vechi, cărora li se adaugă mereu altele noi.
+                                                    <br />
+                                                    Un astfel de traseu este și acesta, pornind în primă fază de la Gara Predeal pe sub Gâlma Mare. Coborâm apoi la Valea Râşnoavei,
+                                                    aproape de Baza sportivă de Schi - Biatlon și urcăm pe Muchia (Culmea) Brădetului prin pădurea de foioase, până în dreptul Cabanei
+                                                    Forban (Steaua), cca 1 h, unde întâlnim varianta BA (traseul 18) dinspre zona La Șipote.
+                                                    <br />
+                                                    Urmăm curba de nivel prin poiana Cabanei Forban, apoi coborâm abrupt prin pădure 20-25 de min, până în Valea Frăsinet, unde
+                                                    întâlnim traseul CG (traseul 19) - spre La Glăjărie (în drumul spre Mălăiești Izvor) și PR (traseul 20) spre Cabana Diham.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    De la gara Predeal mergem 500 de metri spre sud şi apoi 360 de metri pe strada Poiana Narciselor spre vest. Urmăm marcajele care
+                                                    ne duc printr-un culoar prin pădure. Urcăm până sub Gâlma Mare și apoi coborâm pe curbă de nivel, traversăm un drum forestier și
+                                                    coborâm la DN73A. Mergem stânga spre Predeal 50 de metri, ieșim din șosea și urcăm Muchia Brădetului până în dreptul Cabanei Forban
+                                                    (Steaua). Traversăm drumul forestier şi urmăm curba de nivel prin poiana Cabanei Forban, pentru a coborî apoi abrupt prin pădure
+                                                    până în Valea Frăsinet.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/predeal3.jpg" data-lightbox="mygallery" data-title="Predeal - Muchia Brădetului - Valea Frăsinet">
+                                                            <img src="~/Sources/Gallery/predeal3.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all des">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/sipote1.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> La Şipote - Şaua Baiului </h4>
+                                        <p> Legătura drumul auto Predeal-Râșnov (La Șipote) - Șaua Baiului </p>
+                                        <br />
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal6">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal6">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> La Şipote - Şaua Baiului </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> uşor </td>
+                                                        <td> 4,29 KM </td>
+                                                        <td> 1:15-1:30 H </td>
+                                                        <td> 260 M </td>
+                                                        <td> 0 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Ianuarie</td>
+                                                        <td>Februarie</td>
+                                                        <td>Martie</td>
+                                                        <td>Aprilie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Octombrie</td>
+                                                        <td>Noiembrie</td>
+                                                        <td>Decembrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    La Şipote - Cabana Forban (Steaua) - Şaua Baiului
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 18 Banda Albastră leagă drumul de acces Râșnov - Predeal de Șaua Baiului, pe drumul forestier către Cabana Forban și
+                                                    mai departe spre Șaua Baiului. Un traseu potrivit pentru orice vârstă, o plimbare ușoară peste Culmea Brădet - Forban spre Diham.
+                                                    <br />
+                                                    Traseul 18 BA face legătura între zona La Șipote și Șaua Baiului, din apropiere de Cabana Diham. Este un traseu relativ ușor,
+                                                    fără diferențe mari de nivel, în cca. 1.5 h de drumeție, potrivit pentru MTB. Iarna, zăpezile mari pot pune probleme.
+                                                    <br />
+                                                    Situată în proximitatea Bucegilor, Șaua Baiului este nod de legătură între muntele Diham și muntele Clăbucetul Baiului.
+                                                    Toate traseele marcate din această zonă sunt relativ simple, ușoare (diferențe mici de nivel), destul de scurte, accesibile și
+                                                    iarna.
+                                                    <br />
+                                                    Încă de La Șipote traseul începe să-și dezvăluie pitorescul, trecând printr-o superbă poiană de pe coama bazinului despărțitor
+                                                    dintre Valea Râșnoavei și Valea Ghimbavului, Bucșoiu și Colții Morarului completând tabloul în depărtare. Ne însoțim cu marcajele
+                                                    CG (traseul 19) - ce duce spre Valea Glăjăriei și PR (traseul 20) spre Cabana Diham.
+                                                    <br />
+                                                    Urmăm serpentinele drumului forestier ce urcă la Cabana Militară Forban (Steaua) cca. 2 km, unde întâlnim varianta peste Muchia
+                                                    Brădetului (traseul 17), tot BA. Continuăm pentru încă 2 km pe același drum forestier până în Şaua Baiului, important nod de
+                                                    trasee (12, 13, 14, 15, 16, 45). Putem continua spre Cabana Diham.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    Din punctul „La Şipote” de pe DN73A urmăm drumul forestier până la Cabana Militară Forban (Steaua) și mai departe până în Şaua Baiului.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/sipote1.jpg" data-lightbox="mygallery" data-title="La Şipote - Şaua Baiului">
+                                                            <img src="~/Sources/Gallery/sipote1.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all des">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/sipote2.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> La Şipote - Valea Glăjăriei </h4>
+                                        <p> Legătura drumul auto spre Predeal - Râșnov (La Șipote) - Valea Glăjăriei </p>
+                                        <br />
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal7">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal7">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> La Şipote - Valea Glăjăriei </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu </td>
+                                                        <td> 4,91 KM </td>
+                                                        <td> 1:15-1:45 H </td>
+                                                        <td> 190 M </td>
+                                                        <td> 270 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Ianuarie</td>
+                                                        <td>Februarie</td>
+                                                        <td>Martie</td>
+                                                        <td>Aprilie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Octombrie</td>
+                                                        <td>Noiembrie</td>
+                                                        <td>Decembrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    La Şipote - Poiana Frăsinet - Valea Glăjăriei
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 19 Cruce Galbenă leagă zona Predeal de Glăjărie, în drumul spre Cabana Mălăiești. Un traseu potrivit pentru orice
+                                                    vârstă, traversând câteva poienițe, cu o singură porțiune de urcare mai susținută (peste piciorul Muchiei Cenuşii).
+                                                    <br />
+                                                    Traseul 19 CG face legătura între zona La Șipote și în Valea Glăjăriei, trecând prin Poiana Frăsinetului. Cu un grad de
+                                                    dificultate ușor și practicabil tot timpul anului, traseul La Șipote - Valea Glăjăriei, traversează câteva poienițe, ajunge pe
+                                                    piciorul nordic al Muchiei Cenuşii din amonte de Cabana Diham, apoi coboară în Valea Glăjăriei.
+                                                    <br />
+                                                    Încă de La Șipote traseul începe să-și dezvăluie pitorescul, trecând printr-o superbă poiană de pe coama bazinului despărțitor
+                                                    dintre Valea Râșnoavei și Valea Ghimbavului, Bucșoiu și Colții Morarului completând tabloul în depărtare. Ne însoțim cu marcajele
+                                                    BA (traseul 18) - ce urcă spre Șaua Baiului și PR (traseul 20) spre Cabana Diham.
+                                                    <br />
+                                                    Urmăm drumul auto spre Cabana Forban pentru scurt timp apoi facem dreapta spre Valea Frăsinetului, traversând câteva pâraie.
+                                                    În Poiana Frăsinetului, lăsăm la stânga marcajul PR și coborâm prin două poieni pe piciorul nordic al Muchiei Cenuşii.
+                                                    <br />
+                                                    La cca 45 min de Poiana Frăsinetului întâlnim un indicator cu varianta PG (Traseul 47) spre Diham 40 min. Continuăm spre Valea
+                                                    Glăjărie la dreapta, cca 45 min în coborâre abruptă pe un drum de TAF care ne duce pe Vâlcelul lui Timen până la intersecţia dintre
+                                                    Valea Glăjăriei şi Valea Dihamului în punctul numit “La Glăjărie” (nu avem stâlp indicator!) Aici găsim marcajul CA (traseul 48),
+                                                    ce leagă Poiana Mălăiești Izvor de Cabana Diham.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    Traseul porneşte din DN73A şi urmează pentru circa 800 de metri drumul forestier. Ieșim la dreapta pe potecă şi urcăm pe curbă
+                                                    de nivel uşor ascendentă, traversând câteva pâraie. Ajungem până la un pilon al reţelei electrice aeriene şi în 10 minute coborâm
+                                                    în Valea Frăsinetului. Mergem în amonte circa 400 de metri şi după un pod de beton urcăm în dreapta abrupt, scurtând serpentinele
+                                                    unui drum de TAF. Ajungem în Poiana Frăsinetului, ţinem direcţia spre nord şi, pe curbă de nivel, coborâm prin două poieni pe
+                                                    piciorul nordic al Muchiei Cenuşii. În a doua poiană urcăm spre sud pe piciorul de munte, până la un drum de TAF pe care îl urmăm
+                                                    în dreapta. Coborâm pe un drum de TAF care ne duce pe Vâlcelul lui Timen până la intersecţia dintre Valea Glăjăriei şi Valea
+                                                    Dihamului.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/sipote2.jpg" data-lightbox="mygallery" data-title="La Şipote - Valea Glăjăriei">
+                                                            <img src="~/Sources/Gallery/sipote2.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all des">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/sipote3.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> La Şipote - Poiana Pichetul Roşu </h4>
+                                        <p> Legătura La Șipote - Pichetul Roșu, pe la Cabana Diham </p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal8">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal8">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> La Şipote - Poiana Pichetul Roşu </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu </td>
+                                                        <td> 5,98 KM </td>
+                                                        <td> 1:45-2:15 H </td>
+                                                        <td> 350 M </td>
+                                                        <td> 10 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Ianuarie</td>
+                                                        <td>Februarie</td>
+                                                        <td>Martie</td>
+                                                        <td>Aprilie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Octombrie</td>
+                                                        <td>Noiembrie</td>
+                                                        <td>Decembrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    La Şipote - Cabana Diham (1320 m) - Poiana Pichetul Roşu
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 20 Punct Roșu leagă Cabana Diham de Pichetul Roșu, pornind de la DN Predeal - Râșnov (La Șipote). Un traseu relativ ușor
+                                                    și practicabil tot timpul anului, traseul La Șipote - Pichetul Roșu urcă pe versantul estic al Muchiei Cenuşii, apoi ocolește Vf.
+                                                    Diham.
+                                                    <br />
+                                                    Traseul 20 PR Face legătura între zona La Șipote și Poiana Pichetul Roşu, trecând pe la Cabana Diham. Un traseu relativ ușor, cu
+                                                    aprox. 500 m diferențe de nivel, în cca. 2.5 h de drumeție. Iarna, zăpezile mari pot pune probleme.
+                                                    <br />
+                                                    Încă de La Șipote traseul începe să-și dezvăluie pitorescul, trecând printr-o superbă poiană de pe coama bazinului despărțitor
+                                                    dintre Valea Râșnoavei și Valea Ghimbavului, Bucșoiu și Colții Morarului completând tabloul în depărtare.
+                                                    <br />
+                                                    Urmăm drumul auto spre Cabana Forban pentru scurt timp apoi facem dreapta spre Valea Frăsinetului, traversând câteva pâraie. În
+                                                    Poiana Frăsinetului, lăsăm la dreapta marcajul CG (traseul 19) spre Valea Glăjărie şi urcăm pe versantul estic al Muchiei Cenuşii,
+                                                    urmând linia de curent electric, până la Cabana Diham.
+                                                    <br />
+                                                    Situată la altitudinea de 1320 m, Cabana Diham este una din cele mai solicitate cabane atât pe timp de vara cât și pe timp de
+                                                    iarnă, ușor accesibilă din 4 direcții: Predeal, Azuga, Bușteni și Râșnov. Sunați înainte, chiar și doar pentru servirea mesei.
+                                                    <br />
+                                                    Din Poiana Diham continuăm urcuşul pentru aprox. 45 min spre Pichetul Roşu, ocolind Vârful Diham, sub care întâlnim marcajele TR
+                                                    (traseul 9) spre Cabana Mălăiești și BR (traseul 11).spre Vf. Omu, pe potecile Take Ionescu, respectiv Drumul lui Deubel.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    Traseul porneşte din DN73A şi urmează pentru circa 800 de metri drumul forestier. Ieșim la dreapta pe potecă și urcăm pe curbă
+                                                    de nivel uşor ascendentă, traversând câteva pâraie. Ajungem până la un pilon al reţelei electrice aeriene şi în 10 minute coborâm
+                                                    în Valea Frăsinetului. Mergem în amonte circa 400 de metri şi după un pod de beton urcăm în dreapta abrupt, scurtând serpentinele
+                                                    unui drum de TAF. Ajungem în Poiana Frăsinetului, facem stânga (spre sud) şi urcăm pe versantul estic al Muchiei Cenuşii, urmând
+                                                    linia de curent electric, până la Cabana Diham (1320 m). Continuăm urcuşul spre Vârful Diham şi după construcţiile noi facem
+                                                    dreapta, în urcare, spre Pichetul Roşu. Ocolim Vârful Diham pe versantul vestic până în Poiana Pichetul Roşu.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/sipote3.jpg" data-lightbox="mygallery" data-title="La Şipote - Poiana Pichetul Roşu">
+                                                            <img src="~/Sources/Gallery/sipote3.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all des">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/bran4.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Bran - Şaua Ţigăneşti - Cabana Omu </h4>
+                                        <p> Legătura Bran - Vf. Omu, pe Culmea Clincea </p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal9">
+                                            Citește mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal9">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Bran - Şaua Ţigăneşti - Cabana Omu </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu/dificil </td>
+                                                        <td> 15,02 KM </td>
+                                                        <td> 6:15-7:45 H </td>
+                                                        <td> 1730 M </td>
+                                                        <td> 0 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                        <td>Octombrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Bran - Poiana Clincea - Şaua Ţigăneşti - Cabana Omu
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 21 Bandă Roșie străbate lungul și pitorescul sat turistic Poarta pe la baza pârtiei Bran-Zănoaga, apoi urcă pe Culmea
+                                                    Clincea, cu imaginea culoarului Rucăr-Bran și Piatra Craiului în depărtare. Următorul segment urcă prin golul alpin până la
+                                                    baza Turnurilor Țigănești, apoi traversează pe cabluri câteva hornuri spre platoul Vf. Scara și Cabana Omu.
+                                                    <br />
+                                                    Traseul 21 face legătura între Bran și Cabana Omu, într-o urcare susținută pe Culmea Clincea și Muntele Țigănești. Un traseu
+                                                    solicitant, potrivit celor experimentați, obișnuiți cu aprox. 2000 m diferențe de nivel, în cca. 9 h de drumeție. Iarna -
+                                                    nerecomandat.
+                                                    <br />
+                                                    Datorită importanței sale turistice și economice, Comuna Bran este cunoscută ca un important punct de atracție turistică, cât
+                                                    și un punct de plecare către obiectivele turistice din Piatra Craiului și Bucegi. Zona Bran se află la granița dintre
+                                                    "Ţara Bârsei" (depr. Brașov) și "Ţara Făgăraşului" (depr. Făgărașului), un punct de legătură între Muntenia și Transilvania.
+                                                    <br />
+                                                    Încă de la început, odată cu traversarea satului Poarta de la poalele Bucegilor (un Mecca al împătimiților de fotografie), te
+                                                    bucuri de măreția muntelui și rămâi fără suflare. Parcurgem satul Poarta până la baza pârtiei Bran-Zănoaga, unde ne întâmpină
+                                                    un popas cu băncuțe și măsuță. Începem un urcuș susținut pe lângă baza Salvamont Bran și descoperim panorama largă spre culoarul
+                                                    Rucăr-Bran și munții Piatra Craiului.
+                                                    <br />
+                                                    Continuăm prin pădure, pe curbă de nivel și trecem de un izvor cu loc pentru popas. După ce întâlnim traseul PA (traseul 50) -
+                                                    ce vine din Poiana Ciubotei, urcăm în Poiana Pănicerului, unde marcajul PA dispare. Un urcuş pe alocuri pronunţat, ne scoate în
+                                                    culme, de-a lungul căreia, prin rarişti, ajungem în Poiana Clincii. Facem un popas și ne bucurăm de panorama deosebită spre
+                                                    Măgura Codlei și Brașov.
+                                                    <br />
+                                                    Continuând prin pădurea de conifere și ajungem (după aprox. 1 h) în golul alpin, unde trecem de locul numit „La stânci” spre
+                                                    Muntele Ţigăneşti (2214 m). Sub abruptul vârfului facem dreapta pe curbă de nivel ascendentă, până în Şaua Ţigăneşti (2195 m),
+                                                    unde găsim un refugiu mare, construit pentru 20-25 de pers (refugiul se află pe versantul vestic al Culmii Ţigăneşti, la circa 20
+                                                    m sub şa) Aici întâlnim BG (traseul 49) spre Cabana Mălăiești. În stânga vedem Valea Țigănești cu lacul Țigănești, iar în dreapta,
+                                                    Valea Ciubotei. De aici se văd, vârful Omu și stația meteo, pe platoul Morarului.
+                                                    <br />
+                                                    Urcăm pe curbă de nivel pe partea lină a Culmii Ţigăneşti şi în cca 30 min ajungem la baza Turnurilor Ţigăneşti. Poteca echipată
+                                                    cu cabluri şi lanţuri urcă abrupt printre turnuri, pe deasupra Hornului Ţigăneşti, de unde avem o panoramă impresionantă asupra
+                                                    Văii Gaura.
+                                                    <br />
+                                                    Poposim pe platoul Vf. Scara (2422 m), unde se pot vedea urmele unui refugiu semisferic distrus de vânt și continuăm alături de
+                                                    varianta TG (traseul 22) - ce urcă din Poiana Ciubotei. Din Șaua Hornurilor ținem versantul nordic al Muntelui Bucşoiu spre
+                                                    Cabana Omu, amplasată la cea mai mare înălțime în Carpați (2505 m). Alături găsim Stația meteo Vârful Omu, cel mai înalt punct
+                                                    locuit permanent din țară.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    Din Bran parcurgem satul Poarta, lăsăm în faţă Valea Ciubotea și urcăm pe drumul de mașină spre baza pârtiei Bran. Urcăm pe
+                                                    stânga pârtiei până la capătul de sus al teleschiului şi traversăm pârtia pe drumul de TAF. Continuăm pe potecă prin pădure,
+                                                    mereu în urcare, până la golul alpin. Poteca ne conduce prin locul numit „La stânci”, spre Muntele Ţigăneşti (2214 m). Facem
+                                                    dreapta pe curbă de nivel ascendentă, până în Şaua Ţigăneşti (2195 m) (refugiu montan). Urcăm pe curbă de nivel pe Culmea
+                                                    Ţigăneşti până la baza Turnurilor Ţigăneşti. Poteca echipată cu cabluri şi lanţuri urcă abrupt printre turnuri, pe deasupra
+                                                    Hornului Ţigăneşti. Continuăm până pe platoul Vârfului Scara (2422 m) și pe versantul vestic al Muntelui Scara coborâm pe sub
+                                                    fereastra calcaroasă Ţigăneşti până în Şaua Hornurilor. Continuăm în urcuş 30-45 de minute până la Cabana Omu (2507 m).
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/bran4.jpg" data-lightbox="mygallery" data-title="Bran - Şaua Ţigăneşti - Cabana Omu">
+                                                            <img src="~/Sources/Gallery/bran4.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <ul class="pages">
+                        <li><a href="@Url.Action("Index", "TrailModelsList")"> 1 </a></li>
+                        <li class="active"><a href="#"> 2 </a></li>
+                        <li><a href="@Url.Action("Index", "TrailModelsList3")"> 3 </a></li>
+                        <li><a href="@Url.Action("Index", "TrailModelsList4")"> 4 </a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

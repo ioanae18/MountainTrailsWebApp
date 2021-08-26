@@ -1,0 +1,1320 @@
+﻿@model IEnumerable<MountainTrailsWebApp.Models.TrailModels>
+
+@{
+    ViewBag.Title = "Lista trasee";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/TrailModelsList.css")
+    @Styles.Render("~/Content/lightbox.min.css")
+    <script src="~/js/lightbox-plus-jquery.js"></script>
+    <script src="~/js/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+    <div class="products">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="filters">
+                        <ul>
+                            <li class="active" data-filter="*"> Toate traseele </li>
+                            <li data-filter=".beg"> Incepatori </li>
+                            <li data-filter=".med"> Mediu </li>
+                            <li data-filter=".dif"> Dificil </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="filters-content">
+                        <div class="row grid">
+
+                            <div class="col-lg-4 col-md-4 all beg">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/sinaia1.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Sinaia - Şaua Vârfului cu Dor - Cabana Padina </h4>
+                                        <p> Pe sub instalațiile de schi. </p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal1">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal1">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Sinaia - Şaua Vârfului cu Dor - Cabana Padina </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu/dificil </td>
+                                                        <td> 14,15 KM </td>
+                                                        <td> 6:30-7:00 H </td>
+                                                        <td> 1289M </td>
+                                                        <td> 590M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Ianuarie</td>
+                                                        <td>Februarie</td>
+                                                        <td>Martie</td>
+                                                        <td>Aprilie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Octombrie</td>
+                                                        <td>Noiembrie</td>
+                                                        <td>Decembrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Sinaia – Hotel Cota 1400 – Şaua Vârfului cu Dor – Valea Izvorul Dorului – Şaua Lăptici – Cabana Padina
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Considerat leagăn al sporturilor de iarnă în România, Domeniul Schiabil Sinaia, atrage an de an zeci de mii de
+                                                    turiști iubitori de schi. Există însă și un număr considerabil de iubitori de munte care aleg să străbată la pas
+                                                    acest traseu pentru priveliștea Munților Colții lui Barbeș și a văilor din împrejurimi. În plus, din Șaua Lăptici
+                                                    se vede la orizont Coștila, Vf. Piatra Arsă și Muntele Furnica. Din șa coborâm spre oaza de relaxare, zona turistică Padina.
+                                                    <br />
+                                                    Sinaia, una dintre cele mai frumoase stațiuni montane din țară, are un bogat trecut cultural și social. Fosta reședință
+                                                    a regilor, poartă un nume sfânt, cel al Muntelui Sinai și îmbină frumusețea naturii cu cea a artei arhitecturale.
+                                                    Stațiunea Sinaia, supranumită "Perla Carpaţilor", este considerată drept liderul naţional în privinţa numărului de
+                                                    vizitatori, indiferent de anotimp (câteva milioane de turişti, anual).
+                                                    <br />
+                                                    Munții Bucegi, situați la vest, ca un uriaș “scut de pază” al așezării, domină Sinaia printr-un abrupt de peste 1000 m.
+                                                    Vârfurile sar dincolo de 2000 m, strălucind vara în bătaia soarelui iar iarna sub mantia alba a zăpezii, la marginea
+                                                    marelui abrupt al Bucegilor, unul dintre cele mai impresionante din țară. Cei care doresc să ajungă din Sinaia la Cabana
+                                                    Padina prin Șaua Lăptici au posibilitatea de a urca fie pe jos, fie cu telecabina sau cu telescaunul până la cota 2000
+                                                    (Furnica), de unde se coboară cu telescaunul la Cabana Valea Dorului (1820 m) și se începe practic, drumeția spre Valea
+                                                    Soarelui.
+                                                    <br />
+                                                    Perpedes, BR pornește din gara Sinaia, în paralel cu BA (traseul 2) Sinaia - Râşnov, trece de Hotelul Furnica și urcă
+                                                    spre Cota 1400. Lăsăm BA spre Castelul Pelişor, urcând printre case, iar apoi prin pădure, până la Cabana Brădet.
+                                                    Trecem de Cota 1400 și Salvamont, apoi de Cota 1500 (Valea cu Brazi) și luăm Drumul de Vară spre Valea Dorului, cu
+                                                    priveliști spre Colții lui Barbeș. Până aici se fac  3-4 h, la pas. Drumul străbate Vârful cu Dor, cu o priveliște de
+                                                    vis asupra împrejurimilor, la 1938 m alt. Când BR se desprinde de CG (Traseul 36), urmăm poteca din dreapta și intrăm
+                                                    în Valea Izvorul Dorului.
+                                                    <br />
+                                                    Primăvara, această poiană largă și liniștită, este un loc perfect să stai la soare după câteva ore de mers și să te
+                                                    bucuri de pâlcuri de brândușe care abia așteaptă să fie fotografiate. De-aici până la Cabana Padina mai sunt 2 h prin
+                                                    Șaua Lăptici. Din Șaua Lăptici se vede în orizont Coștila, Colții lui Barbeș și Muntele Furnica, spre E, apoi ajungem
+                                                    în cca. 40 min. la cabana Padina (1500 m).
+                                                    <br />
+                                                    Padina nu mai e demult un loc unde să ajungi numai la pas. Este o zona unde poți ajunge cu orice mijloc de transport
+                                                    inclusiv rulotă. Padina este un nod turistic important pentru traseele din zona V. Ialomiței (Cheile Horoabei, Cheile
+                                                    Cocorei, Cheile Urșilor etc).
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    De la gara Sinaia urcăm scările până la şoseaua principală şi după parcul Dimitrie Ghica continuăm pe scări până
+                                                    la strada Furnica. De la sensul giratoriu de la Pelișor urcăm printre case și scurtăm serpentinele șoselei până
+                                                    la Cota 1400. Urcăm pe Drumul de Vară până la Cabana Valea cu Brazi (cota 1500). După circa 200 de metri facem stânga
+                                                    pe un drum mai slab evidenţiat. Pentru varianta de vară urmăm Drumul de Vară până la cota 1700, pentru varianta de
+                                                    iarnă urmăm poteca cu serpentine strânse prin pădure până la aceeași cotă. Continuăm să urcăm pe Drumul de Vară, trecem
+                                                    de Piatra Turcului/Sub Cetate și fosta cabană Vârful cu Dor și ajungem în Şaua Vârful cu Dor (Curmătura Dorului). Poteca
+                                                    coboară pe Vâlcelul Vârfului cu Dor pe pârtia nouă Valea Soarelui. Facem dreapta și urcăm pe firul Văii Izvorul Dorului
+                                                    până în Şaua Lăptici (intersecţie cu drumul auto asfaltat). Din Şaua Lăptici coborâm pe versantul drept al Văii Lăptici
+                                                    traversăm Plaiul lui Păcală și Vâlcelul Cocorei și printr-o poiană lungă ajungem în drumul auto de acces la Hotelul Peştera.
+                                                    Îl traversăm, coborâm până în capătul nordic al poienii largi și urcăm la dreapta spre spre Cabana Padina.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/sinaia1.jpg" data-lightbox="mygallery" data-title="Sinaia - Şaua Vârfului cu Dor - Cabana Padina">
+                                                            <img src="~/Sources/Gallery/sinaia1.jpg" />
+                                                        </a>
+                                                        <a href="~/Sources/Gallery/sinaia2.jpg" data-lightbox="mygallery" data-title="Sinaia - Şaua Vârfului cu Dor - Cabana Padina">
+                                                            <img src="~/Sources/Gallery/sinaia2.jpg" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all dev">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/busteni7.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Buşteni - Cascada Urlătoarea </h4>
+                                        <p>  Legătura Buşteni – Cascada Urlătoarea </p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal2">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal2">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Buşteni - Cascada Urlătoarea </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> usor/mediu </td>
+                                                        <td> 3,59 KM </td>
+                                                        <td> 1:15-1:30 H </td>
+                                                        <td> 323 M </td>
+                                                        <td> 67 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Ianuarie</td>
+                                                        <td>Februarie</td>
+                                                        <td>Martie</td>
+                                                        <td>Aprilie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Octombrie</td>
+                                                        <td>Noiembrie</td>
+                                                        <td>Decembrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Buşteni - Cascada Urlătoarea
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 5 Punct Roșu face legătura între Bușteni și Cascada Urlătoarea, într-o plimbare ușoară, ideală pentru
+                                                    orice vârstă. Cascada Urlătoarea este una dintre cele mai impresionante cascade din țară, atât prin debit, cât
+                                                    și prin cădere. Este unul dintre cele mai ușoare trasee montane din Bucegi.
+                                                    <br />
+                                                    Cascada Urlătoarea este una dintre cele mai impresionante cascade din țară. Aceasta se află situată pe
+                                                    versantul estic al Munților Bucegi, în Parcul Natural Bucegi, foarte aproape de Bușteni. Cu o cădere de 15 m,
+                                                    creează un peisaj spectaculos pentru cei care ajung să o viziteze, mai ales în urma ploilor, când debitul este
+                                                    mai mare. S-a format datorită confluenței Văilor Comorilor și Urlătoarea Mică. Numele cascadei provine de la
+                                                    zgomotul produs de căderea apei.
+                                                    <br />
+                                                    Traseul din Bușteni, marcat cu PR este accesibil tot timpul anului și se parcurge în cca. 1h. Există o porțiune
+                                                    de 200 m mai abruptă, unde se poate aluneca, în condiții de ploaie sau noroi, iar indicatoarele anunță cum că zona
+                                                    ar fi frecventată de urși. Numele cascadei provine de la zgomotul produs de căderea apei. Apa de la Cascadă este
+                                                    potabilă. La cascadă se poate ajunge și din localitatea Poiana Țapului (traseul 4 ).
+                                                    <br />
+                                                    Turiștii care ajung aici pot opta pentru un traseu mai lung, deoarece Cascada Urlătoarea se află în apropierea
+                                                    traseului “Jepii Mari” care leagă staţiunea Buşteni de Platoul Bucegi, respectiv Cabana Piatra Arsă (Traseul 7).
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    Din Gara Buşteni urcăm la staţia de telecabină. Prin stânga staţiei urcăm pe drumul forestier și apoi pe potecă
+                                                    până la canton (captare de apă) şi apoi pe curbă de nivel până la Cascada Urlătoarea.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/busteni2.jpg" data-lightbox="mygallery" data-title="Buşteni - Cascada Urlătoarea">
+                                                            <img src="~/Sources/Gallery/busteni2.jpg" />
+                                                        </a>
+                                                        <a href="~/Sources/Gallery/busteni7.jpg" data-lightbox="mygallery" data-title="Buşteni - Cascada Urlătoarea">
+                                                            <img src="~/Sources/Gallery/busteni7.jpg" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all gra">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/busteni3.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Buşteni - Valea Cerbului </h4>
+                                        <p> Legătura Buşteni – Valea Cerbului (peste Culmea Paltinului) </p>
+                                        <br /><br />
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal3">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal3">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Buşteni - Valea Cerbului </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> ușor/mediu </td>
+                                                        <td> 4,02 KM </td>
+                                                        <td> 1:15-1:30 H </td>
+                                                        <td> 255 M </td>
+                                                        <td> 258 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Ianuarie</td>
+                                                        <td>Februarie</td>
+                                                        <td>Martie</td>
+                                                        <td>Aprilie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Octombrie</td>
+                                                        <td>Noiembrie</td>
+                                                        <td>Decembrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Buşteni - Pârtia Kalinderu - Valea Cerbului
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 6 Punct Galben face legătura între telecabina Bușteni și V. Cerbului, trecând peste Culmea Paltinului
+                                                    (cu pârtia Kalinderu). Ultimul segment înconjoară Plaiul Munticelului până la drumul auto de pe Valea Cerbului.
+                                                    Un traseu ușor, accesibil tot timpul anului, în aprox. 1 - 1.5 h de drumeție.
+                                                    <br />
+                                                    Valea Cerbului este supranumită Poiana verde de la poalele Bucegilor - aşezatǎ în zona NV a stațiunii Bușteni.
+                                                    Este cea mai importantă vale de pe versantul prahovean, ea despicǎ practic lanţul de munţi, fiind o oază de verde
+                                                    la poalele munţilor.
+                                                    <br />
+                                                    Încă din luna mai, oamenii vin aici pentru liniște și relaxare, cu corturi și rulote, motiv pentru care Valea
+                                                    Cerbului mai este denumită „Orașul pe roți”. An de an, sute de familii din toate colţurile ţării se mută cu rulota
+                                                    pe Valea Cerbului, din mai până toamna târziu.
+                                                    <br />
+                                                    PG pornește de la staţia de telecabină Buşteni, urcă pe sub pădure pe Culmea Paltinului, apoi coboară în poiana
+                                                    Kalinderu sub pârtie. De aici urmăm un drum forestier ce duce până deasupra Căminului Alpin, unde întâlnim varianta
+                                                    TR (traseul 9) Bușteni - Mălăiești. Continuăm prin pădure și coborâm în cca 20-25 de min la Valea Cerbului.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    De la staţia de telecabină Buşteni urcăm în dreapta prin pădure până la pârtia Kalinderu, coborâm 100 m diferenţă
+                                                    de nivel pe pârtie, facem stânga pe un drum de TAF până la pârtia Kalinderu 2 și continuăm pe drum forestier până
+                                                    deasupra Căminului Alpin. Urmăm prin pădure poteca marcată până în Valea Cerbului.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/busteni3.jpg" data-lightbox="mygallery" data-title="Buşteni - Valea Cerbului">
+                                                            <img src="~/Sources/Gallery/busteni3.jpg" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all gra">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/sinaia3.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Sinaia - Cabana Omu - Râşnov </h4>
+                                        <p> Legătura Stâna Regală - Piatra Arsă, Cabana Omu - Mălăiești. </p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal4">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal4">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Sinaia - Cabana Omu - Râşnov </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu/dificil </td>
+                                                        <td> 41,34 KM </td>
+                                                        <td> 17:30-19:30 H </td>
+                                                        <td> 2340 M </td>
+                                                        <td> 2508 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Martie</td>
+                                                        <td>Aprilie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Sinaia - Cabana Stâna Regală - Cabana Piatra Arsă - Hotel Peştera - Valea Obârşiei - Cabana Omu - Valea Mălăieşti -
+                                                    Uzina Electrică Râşnov - Râşnov
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul de drumeție din Sinaia până dincolo de Valea Mălăiești este ales cu precădere pentru peisajul natural
+                                                    ce oferă multe puncte de belvedere cu o panoramă feerică și accesibil chiar și familiilor cu copii - pe porțiunea
+                                                    dintre Sinaia și Poiana Stânii Regale. Se poate face popas între cele 2 zile de drumeție la Hotel Peștera, Cabana
+                                                    Omu sau Mălăiești, în funcție de pregătirea fizică și disponibilitatea acestora.
+                                                    <br />
+                                                    Pentru cei dornici de o drumeție de inițiere, prima parte - până la Stânca Franz Joseph, este ideală pentru orice
+                                                    vârstă și posibilă în orice anotimp. Poteca Regală este o alee pietruită, bine îngrijită şi străjuită de balustrade,
+                                                    legătura între Peleș și Poiana Stânii. Traseul e frumos, induce liniște şi o stare de visare. Vara ia aprox. 45 de min.
+                                                    de mers susținut, sau max. 1.5 h de mers lejer. La capătul potecii, la 1270 m alt, se întinde o poiană –
+                                                    Poiana Stânii - de unde poți admira Muntele Furnica, Valea Peleşului, platoul Pietrei Arse, parţial Jepii Mici,
+                                                    Jepii Mari, Caraimanul şi Crucea Eroilor.
+                                                    <br />
+                                                    Cu un ocol de 5 minute prin pădure, ajungem la Stânca Franz Joseph, amenajată în anul 1896, când însuși Regele
+                                                    Carol I a venit în acest loc cu împăratul Austro-Ungariei, Franz Joseph, pentru a-i arăta frumusețea locului. De
+                                                    aici se pot observa Valea Prahovei, stațiunile Predeal, Bușteni, Sinaia dar și munții Baiului cu vârful Cumpătu.
+                                                    <br />
+                                                    Următoarea porțiune este abruptă, prin pădure, pe Piciorul Pietrei Arse, trecând prin două poieni cu vedere
+                                                    panoramică spre Postăvaru și Piatra Mare. În golul alpin coborâm ușor spre Piatra Arsă. Atenție, zona prezintă
+                                                    risc de avalanşă în timpul iernii.
+                                                    <br />
+                                                    De la Cabana Piatra Arsă (1950 m) poteca BA urcă ușor prin pajiștile vălurite de mușuroaie ale "Plaiului lui
+                                                    Păcală", pe Drumul lui Butmăloiu, cu panorame largi spre Munții Leaota. Coborâm pe culme și ajungem lângă Hotel
+                                                    Peştera, de unde se poate urca spre Babele, pe lângă  Cimitirul Elefanților, pe marcaj CA (traseul 8).
+                                                    <br />
+                                                    De aici urmăm V. Obârșiei Ialomiței, o vale de origine glaciară, formată din două căldări, una inferioară și una
+                                                    superioară, despărțite printr-un prag, loc în care s-a format cascada Cascada Obârșiei, cea mai înaltă cascadă din
+                                                    Meridionali și a 2 din țară în ceea ce privește înălţimea căderii de apă, de peste 100 de mi. Din acest loc izvorăște
+                                                    râul Ialomița. Cascada este străjuită în stânga de Munții Obârșia şi în dreapta de Culmea Doamnele.
+                                                    <br />
+                                                    Continuăm cu o urcare susținută pe coastă prin pasaje de stâncă și grohotiș, pe sub Mecetul Turcesc, o stâncă
+                                                    imensă de calcar cu pereți albi, aproape verticali. Lăsăm în urmă panorama superbă asupra Văii Obârșiei, ținem
+                                                    poteca largă de sub Vf. Găvanele şi Bucura Dumbravă, pe la izvoarele Văii Cerbului. În 30-45 de min. ajungem la
+                                                    Cabana Omu (2507 m).
+                                                    <br />
+                                                    Următorul segment coboară spre Valea Gaura şi ajunge la punctul unde poteca spre Mălăieşti se împarte în 2:
+                                                    varianta de iarnă coboară prin Hornul Mare, în timp ce varianta de vară coboară în serpentine, pe versantul
+                                                    drept (sudic) al căldării superioare a Văii Mălăieşti până la baza Hornului Mare. Coborâm mai multe căldări și
+                                                    praguri și ajunge la Cabana Mălăiești, situată într-un cadru natural de excepție. În stânga, Bucşoiu, în dreapta
+                                                    Padina Crucii, în faţă  Hornurile Mălăieşti, - oriunde te uiţi priveliştea e de vis.
+                                                    <br />
+                                                    De-aici poteca coboară pe valea Mălăieşti, parcurgând alternativ zone de pădure şi 3 poieni lungi (Poiana Ferigii,
+                                                    Poiana Mălăieşti Izvor și Poiana Buhacu). Din loc în loc avem priveliști asupra Văii Mălăieşti şi a Postăvarului.
+                                                    Urmăm drumul forestier circa 8-9 km pe Valea Ghimbavului (Pârâului Mare), până în Râşnov.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    De la gara Sinaia urcăm scările până la șoseaua principală și după parcul Dimitrie Ghica continuăm pe scări până
+                                                    la strada Furnica. De la sensul giratoriu de la Pelișor urmăm drumul de cotă și la prima serpentină după intrarea
+                                                    în P.N. Bucegi facem dreapta pe un drum auto pietruit. După Valea Peleşului găsim poteca pietruită ce urcă în
+                                                    stânga până la Poiana Stânii/Stâna Regală. Înainte de Poiana Stânii o potecă cu același marcaj ne duce la
+                                                    stânca Franz Josef şi apoi spre Poiana Stânii. Mergând la stânga, trecem pe lângă un izvor până la Poiana
+                                                    Stânii. Urmăm drumul auto din stânga poienii pentru 100-150 m şi urcăm prin pădure pe Piciorul Pietrei Arse,
+                                                    pe serpentine strânse până la locul de popas (bancă și mese) și mai departe prin zone stâncoase sau prin pădure
+                                                    până la golul alpin (zonă cu risc de avalanșă iarna). Ajungem la limita platoului și în 30 de minute poteca ajunge
+                                                    la Cabana Piatra Arsă (1950 m). Drumul pietruit merge până la capătul șoselei asfaltate și apoi pe potecă cu stâlpi
+                                                    indicatori ieșim din platou, traversăm Vâlcelul Lăptici, Plaiul lui Păcală şi Vâlcelul Cocora şi coborâm pe culme
+                                                    până într-o defrișare din care ieșim pe potecă la stânga spre Hotelul Peştera. Continuăm pe valea Obârșiei pe lângă
+                                                    Cascada Obârșia, depășim pragul glaciar al acesteia și continuăm până în fundul căldării glaciare superioare a Văii
+                                                    Obârşiei, în dreptul nivelului de jos al Mecetului Turcesc. Urcăm în serpentine strânse până în Şaua Cerbului
+                                                    (Obârşiei) și pe drumul de mașină ajungem la Cabana Omu (2507 m). Poteca coboară pe versantul nordic al căldării
+                                                    superioare a Văii Gaura şi în 20 de minute ajungem la separarea traseelor de iarnă și vară: traseul de iarnă
+                                                    coboară din Șaua Hornurilor prin Hornul Mare în căldarea superioară a văii Mălăiești și traseul de vară coboară
+                                                    în serpentine, pe versantul drept (sudic) al căldării superioare a Văii Mălăieşti până la baza Hornului Mare.
+                                                    Coborâm prin cele trei căldări glaciare până la Cabana Mălăieşti (1720 m) și mai departe prin valea Mălăiești până
+                                                    în poiana Mălăieşti Izvor unde facem stânga pe firul apei Mălăiești până la drumul forestier. De aici urmăm drumul
+                                                    forestier pe Valea Ghimbavului (Pârâului Mare), până în Râşnov.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/sinaia3.jpg" data-lightbox="mygallery" data-title="Sinaia - Cabana Omu - Râşnov">
+                                                            <img src="~/Sources/Gallery/sinaia3.jpg" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all dev">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/poiana1.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Poiana Ţapului - Cabana Stâna Regală </h4>
+                                        <p> Legătura Poiana Ţapului – Cabana Stâna Regală  </p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal5">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal5">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Poiana Ţapului - Cabana Stâna Regală </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> uşor/mediu </td>
+                                                        <td> 3,67 KM </td>
+                                                        <td> 1:30-2:15 H </td>
+                                                        <td> 472 M </td>
+                                                        <td> 44 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Ianuarie</td>
+                                                        <td>Februarie</td>
+                                                        <td>Martie</td>
+                                                        <td>Aprilie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Octombrie</td>
+                                                        <td>Noiembrie</td>
+                                                        <td>Decembrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Poiana Ţapului - Valea Babei - Cabana Stâna Regală
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 3 Punct Galben străbate o zona mai puțin cunoscută dar foarte interesantă din punct de vedere turistic,
+                                                    și anume abruptul prahovean al Bucegilor din dreptul Poienii Țapului. Un traseu ușor, recomandat începătorilor,
+                                                    practicabil tot timpul anului, indiferent de starea vremii și de condiția fizică.
+                                                    <br />
+                                                    Poiana Țapului este o localitate componentă a orașului Bușteni, iar amplasarea ei îi oferă un climat stimulant,
+                                                    cu o ionizare care o recomandă pentru odihnă și recreere, tratarea nevrozelor, surmenajului fizic și intelectual.
+                                                    Urmele regalității se văd și aici, fiind situată în apropiere de castelul Peleș, Pelișor și Poiana Stânii Regale.
+                                                    <br />
+                                                    Un itinerar ușor, recomandat începătorilor și celor care nu vor sau nu pot face un efort prea mare, traseul PG
+                                                    este practicabil tot timpul anului, indiferent de starea vremii și de condiția fizică. Marcajul pornește din Halta
+                                                    Poiana Ţapului, unică pe Valea Prahovei, în ceea ce priveşte stilul arhitectural, de inspirație germană. Tot de aici
+                                                    pleacă și unul din cele mai frecventate trasee turistice, cel spre Cascada Urlătoarea (marcaj PA, durata 1 h).
+                                                    <br />
+                                                    Traversăm Valea Babei și urcăm spre Plaiul Seciului. Trecem pe lângă stâncile ,,Sǎgeata şi scutul’’, apoi ,,Stânca
+                                                    cu Clopoţei’ de unde se pot admira Sinaia, Munţii Baiului, Piatra Mare şi masivul Postǎvarul. Continuăm urcarea
+                                                    spre Poiana Stânii și ajungem la Cabana Stâna Regală (1270 m), unde întâlnim traseul BA (traseul 2) spre Piatra Arsă.
+                                                    <br />
+                                                    Cu un ocol de 5 min prin pădure se poate ajunge la Stânca Franz Joseph, amenajată în anul 1896, când însuși Regele
+                                                    Carol I a venit în acest loc cu împăratul Austro-Ungariei, Franz Joseph, pentru a-i arăta frumusețea locului.
+                                                    De aici se pot observa Valea Prahovei, stațiunile Predeal, Bușteni, Sinaia dar și munții Baiului cu vârful Cumpătu.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    De la Halta Poiana Ţapului urcăm până la DN1 şi ieșim din localitate pe strada Mihai Bravu. Mergem pe un drum de
+                                                    TAF, traversăm văile Babei și Piatra Arsă și continuăm până în Poiana Stânii.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/poiana1.jpg" data-lightbox="mygallery" data-title="Poiana Ţapului - Cabana Stâna Regală">
+                                                            <img src="~/Sources/Gallery/poiana1.jpg" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all des">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/poiana2.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Poiana Ţapului - Cascada Urlătoarea </h4>
+                                        <p> Legătura Poiana Ţapului – Cascada Urlătoarea </p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal6">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal6">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Poiana Ţapului – Cascada Urlătoarea </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> uşor/mediu </td>
+                                                        <td> 2,73 KM </td>
+                                                        <td> ~0:45 H </td>
+                                                        <td> 309 M </td>
+                                                        <td> 12 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td>Ianuarie</td>
+                                                        <td>Februarie</td>
+                                                        <td>Martie</td>
+                                                        <td>Aprilie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Octombrie</td>
+                                                        <td>Noiembrie</td>
+                                                        <td>Decembrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Poiana Ţapului - Cascada Urlătoarea
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 4 Punct Albastru vizitează Cascada Urlătoarea cu pornire din Poiana Țapului, pe un traseu scurt,
+                                                    într-o plimbare ușoară, ideală pentru orice vârstă, considerat cel mai uşor traseu din Bucegi. Cascada Urlătoarea
+                                                    este una dintre cele mai impresionante cascade din țară, atât prin debit, cât și prin cădere.
+                                                    <br />
+                                                    Cascada Urlătoarea este una dintre cele mai impresionante cascade din țară. Aceasta se află situată pe versantul
+                                                    estic al Munților Bucegi, în Parcul Natural Bucegi, foarte aproape de Bușteni. Cu o cădere de 15 m, creează un
+                                                    peisaj spectaculos pentru cei care ajung să o viziteze, mai ales în urma ploilor, când debitul este mai mare. S-a
+                                                    format datorită confluenței Văilor Comorilor și Urlătoarea Mică. Numele cascadei provine de la zgomotul produs de
+                                                    căderea apei.
+                                                    <br />
+                                                    Deși mai puțin frecventat decât traseul spre Cascada Urlătoare care pleacă din Bușteni (Traseul 5 ), și această
+                                                    opțiune pentru a ajunge la Cascadă este la fel de ușoară și plăcută. La doar câteva minute după ce părăsești zona
+                                                    populată ești înconjurat de natură, liniște și aer proaspăt. Se merge 30-40 de min pe drumul forestier, apoi 10-15
+                                                    min pe Valea Urlătorii Mici prin pădure. Un traseu ușor, accesibil oricui, ce nu necesită echipament deosebit și
+                                                    nici pregătire fizică specială. Se poate parcurge tot timpul anului.
+                                                    <br />
+                                                    Turiștii care ajung aici pot opta pentru un traseu mai lung, deoarece Cascada Urlătoarea se află în
+                                                    apropierea traseului “Jepii Mari” care leagă staţiunea Buşteni de Platoul Bucegi, respectiv Cabana
+                                                    Piatra Arsă (Traseul 7).
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    De la Halta Poiana Ţapului urcăm până la DN1, ieșim din localitate pe strada Urlătoarei și continuăm pe drum
+                                                    forestier și potecă până în Valea Urlătorii Mici, sub Cascada Urlătoarea
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/poiana2.jpg" data-lightbox="mygallery" data-title="Poiana Ţapului - Cascada Urlătoarea">
+                                                            <img src="~/Sources/Gallery/poiana2.jpg" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all des">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/busteni4.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Buşteni - Cabana Padina - Pietroşiţa </h4>
+                                        <p> Jepii Mici - Cab. Padina - Cheile Tătarului - Lacul Bolboci </p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal7">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal7">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Buşteni - Cabana Padina - Pietroşiţa </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu/dificil </td>
+                                                        <td> 42,19 KM </td>
+                                                        <td> 10:30-13:00 H </td>
+                                                        <td> 1440 M </td>
+                                                        <td> 1790 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Buşteni - Valea Jepilor - Cabana Caraiman - Cabana Babele - Hotel Peştera - Cabana Padina - Cabana Bolboci - Cabana Zănoaga -
+                                                    Cabana Scropoasa (dezafectată) - Dobreşti - Tabăra Căprioara - Pietroşiţa
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Acest traseu străbate pentru început porțiunea denumită Jepii Mici, apoi trece pe lângă Cabana Caraiman, străbate
+                                                    Platoul Babele, coboară la zona Padina și ajunge pe curbele drumului auto de pe marginea lacului Bolboci. Un adevărat
+                                                    tur de forță în Munții Bucegi - recomandat turiștilor cu experiență montană mare.
+                                                    <br />
+                                                    Valea Jepilor este unul dintre cele mai frecventate trasee din Munții Bucegi. Un traseu dificil, cu peste 1000 m diferențe
+                                                    de nivel, în cca 3 - 4 h de drumeție. Pitorească și în același timp periculoasă, poteca Jepii Mici străbate muntele despicat
+                                                    de prăpăstii adânci, străjuită de Vârful Caraiman (2.384 m) și de Vârful Jepii Mici (2.154 m).
+                                                    <br />
+                                                    Jepii Mici este o potecă pietroasă, bolovani mai mici sau mai mari ne taie calea, astfel încât trebuie să avem grijă să nu îi
+                                                    pornim la vale. Are porţiuni înguste unde putem înainta doar ţinându-ne de corzile şi lanţurile fixate temeinic în stâncă, motiv
+                                                    pentru care acest traseu este considerat unul dificil fără echipament adecvat. Iarna - pericol de avalanșă.
+                                                    <br />
+                                                    Din Bușteni, cunoscut drept “Poarta Bucegilor”, traseul Jepii Mici are același traseu până la urcarea în pădure ca și Jepii
+                                                    Mari. De aici, CA continuă la dreapta, având acces spre Cabana Caraiman și Cabana Babele. O buna parte din traseu urcă pe sub
+                                                    telecabina Bușteni ce ajunge pe Platoul Bucegi în 12 min. Priveliștile de la înălțime nu se compară însă cu sentimentele trăite
+                                                    jos, unde se contopesc stâncile, pădurea și prăpăstiile adânci. Jepii Mici urmează V. Jepilor, cunoscută și sub numele de Valea
+                                                    Caraiman, pe traseul căruia se întâlnesc de asemenea Cascada Caraiman (Cascada Fantomă) și Cabana Caraiman.
+                                                    <br />
+                                                    De la refugiul Salvamont există 19 cabluri care ne însoţesc până la Cabana Caraiman, cu numeroase locuri panoramice. Un exemplu
+                                                    este ,,Creasta cu Zâmbri”, unde se află o importantă concentrare de exemplare unice de Pinus cembra (zâmbru). La Cascada Caraiman
+                                                    sau Vânturișul Caraimanului, impresionantă la debite mari, putem admira brânele Jepilor, telecabina suspendată deasupra văii și,
+                                                    cu puțin noroc, capre negre. Nu trebuie să uităm de panorama oferită de Munții Baiului de pe malul stâng al râului Prahova.
+                                                    <br />
+                                                    Poteca V. Jepilor iese în firul Vâlcelului Zăpezilor (care păstrează multă zăpadă), de unde urmează o faţă stâncoasă, urcă pieptiş
+                                                    printr-un horn şi răzbate deasupra zonei de stâncării; pe o coastă puternic înclinată, iar după un urcuş scurt ajunge la Cabana
+                                                    Caraiman (2025 m). Aici întâlnim poteca PA (traseul 42) - legătura spre Crucea Eroilor de pe Caraiman, peste Brâna Mare a
+                                                    Caraimanului, traseu de asemenea dificil.
+                                                    <br />
+                                                    CA continuă spre Cabana Babele până la baza telecabinei, unde întâlnim traseul principal BG (traseul 37) - legătura cu Cabana Omu
+                                                    și Cota 2000. Forța vântului în această „Cetate de piatră”, a sculptat în decursul timpului în roci, gresii și conglomerate cele
+                                                    mai curioase forme, „Sfinxul”, „Babele” și alți megaliți ce impresionează an de an turiștii.
+                                                    <br />
+                                                    De aici se coboară la Peştera, pe Piciorul Babelor, pe sub Vârful Cimitirul Elefanților. până la Hotel Peștera, apoi mai departe
+                                                    spre Mănăstirea Peştera. Continuăm pe poteca întărită cu trepte de lemn sau de ciment până la cursul Văii Ialomiţe. Spre NV zărim
+                                                    zona de stâncării abrupte de calcare de deasupra Văii Horoabei, cu Turnul Seciului.
+                                                    <br />
+                                                    CA continuă în coborâre uşoară, prin pajiştile întinse ale padinei, paralel cu firul Ialomiţei. Valea se îngustează, iar poteca,
+                                                    după ce descrie o curbă spre dreapta, intră în Cheile Coteanului (Cheile Mici ale Tătarului). După traversarea cheilor ieşim
+                                                    într-o padină întinsă între coastele Munţilor Lăptici (stânga) şi Tătarul (dreapta), trecem de păstrăvărie (părăsită) şi de
+                                                    Turbăria Lăptici (în stânga noastră) şi parcurgem scurtele şi frumoasele Chei ale Tătarului, care ne conduc la coada Lacului
+                                                    Bolboci. Râul Ialomița a săpat în calcarele de aici un „V” impresionant, cu pereți înalți și abrupți. După primele două curbe
+                                                    ale drumului întâlnim varianta TG (traseul 56) spre Şaua Tătaru - legătura cu Munții Leaota.
+                                                    <br />
+                                                    Continuăm pe curbele drumului auto de pe marginea lacului, traversăm Văile Tătarului, Mircii şi Bolboci şi după cca. 2, 5 h de
+                                                    la Padina, ajungem la Cabana Bolboci. Pe baraj pleacă varianta CG (traseul 36) spre Valea Dorului şi fosta Cabană Vârful cu Dor.
+                                                    <br />
+                                                    Bolboci e un lac vast, creat prin blocarea artificială a râului Ialomița în 1988 (baraj), ascunzându-se printre versanți, în
+                                                    așa fel încât e aproape imposibil să îl prinzi într-o singură imagine, chiar și de pe creste. De aici, urmăm drumul auto până la
+                                                    Cabana Zănoaga și continuăm mai departe prin frumoasele Chei ale Zănoagei Mari. În aceste chei amenajate cu podeţe găsim trei
+                                                    izvoare din care ne putem alimenta cu apă.
+                                                    <br />
+                                                    Pornim spre Cabana Scropoasa (închisă), urmăm malul drept al lacului, lăsăm în dreapta intrarea în Cheile Orzei (închise publicului)
+                                                    şi ocolim muntele ieșind în frumoasele Chei ale Ialomiţei. Parcurgem valea până la Tabăra Vânătorul şi hidrocentrala Dobreşti,
+                                                    apoi pe lângă Tabăra Căprioara. Ultimii 4 km ne conduc până în satul Pucheni, comuna Moroeni.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    Din Gara Bușteni urcăm la staţia de telecabină. Prin stânga staţiei urcăm 10 minute pe drum forestier și
+                                                    continuăm pe potecă și drum forestier pe valea Jepilor. Poteca continuă la stânga pe versantul sudic al Văii
+                                                    Jepilor și după 1,5 ore trecem pe versantul nordic al văii. După 45 de minute ieșim în poienile alpine și
+                                                    urmăm poteca ce traversează de două ori firul apei și continuă pe versantul nordic peste două praguri stâncoase
+                                                    echipate cu cabluri și apoi prin serpentine până la Cabana Caraiman. Continuăm în urcuş până la staţia de
+                                                    telecabină Babele și apoi la dreapta până la Cabana Babele. Traseul continuă pe Piciorul Babelor spre vest
+                                                    pentru 1-1½ ore și la stânga ajungem la Hotelul Peştera. Urmăm drumul auto până la Mănăstirea Peştera, facem dreapta și
+                                                    coborâm pe poteca întărită cu trepte de lemn sau de ciment până la cursul Văii Ialomiţei. Îl traversăm şi continuăm coborârea
+                                                    până în poiana Cabanei Padina și mai departe trecem de baza Salvamont, restaurantul Diana și vila Coteanu și intrăm în Cheile
+                                                    Coteanului. Urmăm drumul din dreapta lacului (vest), trecem de păstrăvărie şi de Turbăria Lăptici, parcurgem Cheile Tătarului
+                                                    până la coada lacului Bolboci și urmăm drumul pe dreapta lacului până la Cabana Bolboci. Drumul ne duce până la Cabana Zănoaga,
+                                                    trecem de campingul Zănoaga și parcurgem Cheile Zănoagei Mari până la Cabana Scropoasa (dezafectată). Urmăm malul drept al
+                                                    lacului de acumulare Scropoasa, lăsăm în dreapta intrarea în Cheile Orzei şi ocolim în serpentine muntele ce formează versantul
+                                                    stâng al cheilor, pentru a coborî după ce se termină Cheile Orzei spre Cheile Ialomiţei. Urmăm drumul de acces al muncitorilor
+                                                    până la Tabăra Vânătorul şi la hidrocentrala Dobreşti. De aici urmăm drumul auto nemodernizat, trecem de taberele Cerbul și
+                                                    Căprioara şi ajungem în satul Pucheni. Urmăm apoi drumul până în Pietroșiţa până la gară.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/busteni4.jpg" data-lightbox="mygallery" data-title="Buşteni - Cabana Padina - Pietroşiţa">
+                                                            <img src="~/Sources/Gallery/busteni4.jpg" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all des">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/busteni5.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Buşteni - Poiana Pichetul Roşu - Cabana Mălăieşti </h4>
+                                        <p> Legătura Bușteni - Cabana Mălăiești, pe Take Ionescu </p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal8">
+                                            Citeste mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal8">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Buşteni - Poiana Pichetul Roşu - Cabana Mălăieşti </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu/dificil </td>
+                                                        <td> 12,24 KM </td>
+                                                        <td> 4:00-5:00 H </td>
+                                                        <td> 1020 M </td>
+                                                        <td> 220 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Buşteni - Căminul Alpin - Poiana Coştilei - Poiana Pichetul Roşu - La Prepeleac - Cabana Mălăieşti
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Cabana Mălăieşti este poate cea mai îndrăgită cabană din munţii Bucegi - un loc de popas “sus” la intersecţia unor trasee spectaculoase.
+                                                    Amfiteatru căldării glaciare îţi dă senzaţia că locul arată ca o fortăreață. Poteca este un tur de forță la marginea abruptului prahovean,
+                                                    cu un ultim segment dificil (Poteca Take Ionescu) -nerecomandată iarna.
+                                                    <br />
+                                                    Traseul 9 TR face legătura între Bucegi (Căminul Alpin) și Cabana Mălăieşti, situată într-un cadru natural de poveste. Un traseu solicitant,
+                                                    cu peste 1000 m diferențe de nivel, în aprox. 4.5 h de drumeție, cu o porțiune dificilă de lanțuri.
+                                                    <br />
+                                                    Cabana Mălăieşti (1720 m) se află la baza unei căldări glaciare aflate pe valea glaciară, dispusă în amfiteatru între culmea Bucşoiu Mare şi
+                                                    creasta Padina Crucii. Este lesne de înțeles de ce arată ca o fortăreață și de unde i se trage frumusețea. Odată ce ajungi în căldare ai un
+                                                    sentiment de liniște, te bucuri de traseul finalizat și de oameni dragi. Serile se cântă des la chitară şi e multă voie bună. Cabana este
+                                                    deschisă permanent și există un refugiu Salvamont lângă cabană care oferă ajutor la nevoie.
+                                                    <br />
+                                                    Traseul TR pornește de la Căminul Alpin, ajunge în Poiana Coştilei, un luminiș cu perspective minunate asupra Bucegilor, apoi continuă spre
+                                                    Colții Morarului și mai departe pe Take Ionescu - o adevărată magistrală care înconjoară la cca 1400 – 1700 m alt, poate cea mai importantă
+                                                    parte a Abruptului Prahovean (partea de NE). Din el se desprind trasee spre importante obiective turistice, alpine şi de schi din zonele Coştila,
+                                                    Omul, Morarul şi Bucşoiul. Iarna traseul este periculos şi dificil între Pichetul Roşu - Mălăieşti, pe Take Ionescu.
+                                                    <br />
+                                                    De la Căminul Alpin, TR urmează în urcuş uşor prin pădure poteca largă spre V de pe Plaiul Munticelului. După ce lăsăm în stânga poteca
+                                                    nemarcată spre Valea Albă şi Refugiul Coştila, traversăm văile Coştilei şi Gălbenelelor spre Poiana Coştilei  cca. 2.5 h de la start).
+                                                    Poiana aflată chiar la poalele munților, este un loc frumos de unde poți admira muntele impozant ce se afla parcă la o aruncătură de băț.
+                                                    Deasupra pădurii se înalţă Vf. Santinela Văii Cerbului, iar în fund, abruptul Coştilei, Valea Mălinului şi marele perete al Crestei Gălbinelelor.
+                                                    În Poiană nu exista sursă de apă, doar mai sus, spre Refugiul Colții Morarului.  În capătul nordic al poienii există o stână locuită pe timp de
+                                                    vară (atenţie la câini!).
+                                                    <br />
+                                                    Poteca încalecă apoi o coamă scundă, dincolo de care ajungem la răscrucea de drumuri „Poiana Văii Cerbului" (1310 m), unde întâlnim traseul
+                                                    BG (traseul 10) spre Cabana Omu. Continuăm prin pădure pe curbă de nivel cu urcări uşoare şi după cca 1-1.5 h poposim în Poiana Pichetul Roşu,
+                                                    unde ajung și traseele BR (Traseul 11) - dinspre Cabana Gura Diham și PR (Traseul 20) de la Diham spre Omu.  (Buşteni – Pichetul Roşu: 3 h).
+                                                    <br />
+                                                    De-aici TR continuă pe sub abruptul Bucşoiului şi traversează mai multe vâlcele, porţiunile dificile alternând cu cele ușoare. În cca 30-40
+                                                    de min ajungem în Poiana Bucşoiului, de unde trecem Valea Rea și intrăm pe Traseul Take Ionescu, zonă echipată cu lanţuri şi podeţe de lemn:
+                                                    Urcăm în Şaua Mălăieşti / La Prepeleac (1780 m alt), unde lăsăm poteca BR spre Cabana Omu la stânga. De aici se văd în acelaşi timp Cabanele
+                                                    Diham şi Mălăieşti.
+                                                    <br />
+                                                    Coborâm o treaptă stâncoasă echipată cu lanţ, depăşim un podeţ de lemn (şi el echipat cu lanţ) şi după cca 10-15 min. ajungem în căldarea
+                                                    inferioară a Văii Mălăieşti, cu Cabana Mălăieşti. De aici se poate urca spre Omu, prin Hornul Mare.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    De la Gara Buşteni urcăm până la Căminul Alpin (pe strada Morarului), continuăm pe potecă pe plaiul Munticelu și depășim firele Văii
+                                                    Coştilei şi cel al Văii Gălbenelelor şi ajungem în Poiana Coștila. Traversăm poiana Văii Cerbului și prin pădure pe curbă de nivel cu
+                                                    uşoare urcări şi coborâri ajungem în Poiana Pichetul Roşu. Urcăm în stânga pe traseul „Take Ionescu” spre Cabana Mălăieşti, traversăm
+                                                    Poiana Bucşoiului, continuăm în urcare până la un pinten cu iarbă aflat sub piciorul estic al Vârfului Bucşoiu, lăsăm în stânga traseul
+                                                    spre Vârful Bucşoiu şi Cabana Omu, continuăm printr-o zonă echipată cu lanţuri şi podeţe de lemn şi urcăm în Şaua Mălăieşti/Prepeleac (1780 m).
+                                                    Coborâm pe curbă de nivel şi peste o treaptă stâncoasă echipată cu lanţ, depăşim o altă zonă cu lanţ și ajungem la Cabana Mălăieşti.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/busteni5.jpg" data-lightbox="mygallery" data-title="Buşteni - Poiana Pichetul Roşu - Cabana Mălăieşti">
+                                                            <img src="~/Sources/Gallery/busteni5.jpg" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all des">
+                                <div class="product-item">
+                                    <img src="~/Sources/Gallery/busteni6.jpg" alt="">
+                                    <div class="down-content">
+                                        <h4> Buşteni - Poiana Coştilei - Cabana Omu </h4>
+                                        <p> Legătura Bușteni - Vf. Omu, pe Valea Cerbului </p>
+
+                                        <a class="btn btn-success glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".trailmodal9">
+                                            Citește mai mult
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade trailmodal9">
+                                    <div class="modal-dialog modal-xl" style="width:90%">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button data-dismiss="modal" class="close"> <span> &times; </span> </button>
+                                                <div class="modal-title"> <h1> Buşteni - Poiana Coştilei - Cabana Omu </h1> </div>
+
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th> Dificultate </th>
+                                                        <th> Distanță </th>
+                                                        <th> Durată </th>
+                                                        <th> Urcare </th>
+                                                        <th> Coborâre </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> mediu/dificil </td>
+                                                        <td> 11,87 KM </td>
+                                                        <td> 5:30-7:00 H </td>
+                                                        <td> 1610 M </td>
+                                                        <td> 0 M </td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Cele mai bune sezoane </b></h3>
+                                                <table>
+                                                    <tr>
+                                                        <td colspan="2"> Mai </td>
+                                                        <td rowspan="4"> Iunie</td>
+                                                        <td>Iulie</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2"> August </td>
+                                                        <td>Septembrie</td>
+                                                    </tr>
+                                                </table>
+
+                                                <br />
+
+                                                <h3> <b> Etape </b></h3>
+                                                <p>
+                                                    Buşteni - Plaiul Fânului - Poiana Coştilei - Cabana Omu
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Descriere </b></h3>
+                                                <p>
+                                                    Traseul 10 Bandă Galbenă străbate aproape în totalitate Valea Cerbului, exceptând porțiunea denumită „Plaiul Fânului”
+                                                    sau „Drumul Tunului”. Este cea mai importantă vale de pe versantul prahovean al Munților Bucegi, o vale încântǎtoare ce
+                                                    despicǎ lanțul de munți urcând apoi pe versantul sudic al Muntelui Morarul până la Cabana Omu.
+                                                    <br />
+                                                    Traseul 10 BG face legătura între Bușteni și Cabana Omu, situată la cea mai mare înălțime în Carpați (2505 m). Un traseu solicitant,
+                                                    cu peste 1500 m diferențe de nivel, în aprox. 5-7 h de drumeție  Alături de cabană, găsim Stația meteorologică Vârful Omu, aceasta fiind
+                                                    cel mai înalt punct locuit permanent din țară..
+                                                    <br />
+                                                    Traseul BG pornește din Gara Bușteni sau de la Căminul Alpin. Continuăm pe șosea cca. 30-40 min, alături de marcajele BR (traseul 11) și TA
+                                                    (traseul 12) şi ajungem la ramificaţia drumului spre Plaiul Fânului. BR și TA continuă spre Cabana Gura Diham.
+                                                    <br />
+                                                    BG face stânga, pe „Plaiul Fânului” sau „Drumul Tunului”, printr-o poiană largă, urcă ocolind prin dreapta şi de-a coasta Vf. Gâlma Mare
+                                                    (1419 m) şi răzbate în Poiana Coştila, unde peisajul e dominat de perspectiva abruptului Coştilei. Depăşim stâna din poiană pe la N şi ajungem
+                                                    la intersecţia cu TR (traseul 9 ) - ce duce la Cabana Mălăiești.
+                                                    <br />
+                                                    Periplul pe Valea Cerbului continuă printr-o serie de poienițe (Poiana Văii Cerbului, Poiana Urzicii, Poiana Priponului), apoi urcăm câteva
+                                                    trepte stâncoase prin canionul îngust „La numărătoarea oilor”, de unde putem admira Muntele Colţii Obârşiei (2480 m), remarcabil în zona de
+                                                    pereţi stâncoşi Cerdacul Obârşiei. Urcăm în serpentine repetate pe versantul sudic al Muntelui Morarul, până sub Cabana Omu, unde întâlnim
+                                                    traseul traseul principal ce urcă de la Piatra Arsă (traseul 37) BG. După cca 200 m ajungem la Cabana Omu.
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Indicatii de orientare </b></h3>
+                                                <p>
+                                                    De la Gara Buşteni urmăm spre nord DN1 până la strada Nestor Ureche, facem stânga pe aceasta până în drumul asfaltat de pe Valea
+                                                    Cerbului pe care mergem până în poiana Fânului. Urcăm pe drumul de TAF prin nordul Gâlmei Mari (1419 m), pe „Plaiul Fânului” sau
+                                                    „Drumul Tunului” până în poiana Coștila, o traversăm și ajungem în poiana Văii Cerbului. Traversăm firul văii Cerbului, urcăm pe
+                                                    versantul nordic al acesteia circa 1 ½ ore, urmăm poteca prin poienile Urzicii și Priponului, urcăm câteva trepte stâncoase, prin
+                                                    canionul îngust „La numărătoarea oilor” şi o altă treaptă stâncoasă şi ajungem lângă firul Văii Cerbului. Continuăm pe versantul
+                                                    sudic tot în urcare, trecem pe versantul nordic/stâng (geografic) și după 30 de minute revenim pe versantul sudic/drept pentru a
+                                                    urca peste un prag stâncos în ultima căldare glaciara a Văii Cerbului. Urcăm pe dreapta în serpentine repetate pe versantul sudic
+                                                    al Muntelui Morarul până la Cabana Omu (2507 m).
+                                                </p>
+
+                                                <br />
+
+                                                <h3> <b> Galerie </b></h3>
+                                                <div id="main">
+                                                    <div class="gallery">
+                                                        <a href="~/Sources/Gallery/busteni6.jpg" data-lightbox="mygallery" data-title="Buşteni - Poiana Coştilei - Cabana Omu">
+                                                            <img src="~/Sources/Gallery/busteni6.jpg" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal"> Cancel </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <ul class="pages">
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="@Url.Action("Index", "TrailModelsList2")"> 2 </a></li>
+                        <li><a href="@Url.Action("Index", "TrailModelsList3")"> 3 </a></li>
+                        <li><a href="@Url.Action("Index", "TrailModelsList4")"> 4 </a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

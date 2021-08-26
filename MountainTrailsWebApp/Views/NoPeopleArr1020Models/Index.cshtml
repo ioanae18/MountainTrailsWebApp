@@ -1,0 +1,107 @@
+﻿@model IEnumerable<MountainTrailsWebApp.Models.NoPeopleArr1020Models>
+
+@{
+    ViewBag.Title = "Lista sosirilor 2010-2020";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/NoPeopleArr1020.css")
+</head>
+<body>
+        <h1>
+            Turiștii cazați în structurile de primire turistică cu funcțiuni de
+            cazare turistică, pe tipuri de structuri
+        </h1>
+        <br /> 
+
+        <table class="table">
+            <tr id="firstrow">
+                <th>
+                    @Html.DisplayNameFor(model => model.Hotels)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Hostels)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Motels)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Hans)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Villas)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Cabins)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Campings)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Stops)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Pensions)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Year)
+                </th>
+                <th></th>
+            </tr>
+
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Hotels)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Hostels)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Motels)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Hans)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Villas)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cabins)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Campings)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Stops)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Pensions)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Year)
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+        <p>
+            În ultima perioadã de timp (2013 - 2019) se observã o revigorare a domeniului turism, în ceea ce privește
+            investițiile în infrastructurã (din 2013 pânã în 2017 numărul structurilor de primire turistică a crescut cu 31,5%,
+            a numãrului de sosiri și înnoptări în structurile de primire turistică, a creșterii
+            numărului de turiști români participanți la acâiunile turistice interne și externe organizate de agențiile de turism și a
+            numărului de turiști străini care au cumpărat pachete turistice către țara noastră, nu în ultimul rând a
+            creșterii numărului de turiști străini cazați în structurile de primire turistică.
+            <br /><br />
+            În anul 2020, turismul a avut de suferit din cauza pandemiei, astfel a scăzut numărul sosirilor turiștilor.
+        </p>
+
+</body>
+</html>

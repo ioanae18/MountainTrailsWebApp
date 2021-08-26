@@ -1,0 +1,67 @@
+﻿@model IEnumerable<MountainTrailsWebApp.Models.MountainModels>
+
+@{
+    ViewBag.Title = "Lista muntilor";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/MountainsList.css")
+</head>
+<body>
+    <h4>
+        <b>  Lista muntilor din Romania</b>
+    </h4>
+    <br />
+
+    <table class="styled-table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MountainName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Group)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Division)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCounty)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.IdTrail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdPeak)
+            </th>*@
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MountainName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Group)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Division)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCounty)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.IdTrail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdPeak)
+            </td>*@
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

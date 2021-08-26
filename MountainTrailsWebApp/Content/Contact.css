@@ -1,0 +1,50 @@
+﻿/**/
+body {
+    background-image: url('/Sources/Images/background_contact2.jpg');
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 5px 100px;
+    justify-content: center;
+    align-items: center;
+}
+.contact .contactus {
+    background: rgba(76, 175, 80, 0.3);
+    width: 150%;
+}
+.button input  {
+    color: white;
+    align-items: center;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    background-color: #009933;
+}
+.button input:hover {
+    color: black;
+    background-color: #00ccff;
+}
+
+td{
+    padding-left: 10px;
+}
+
+.icon{
+    min-width: 30px;
+    height: 30px;
+    display: flex;
+    border-radius: 50%;
+    font-size: 17px;
+}
